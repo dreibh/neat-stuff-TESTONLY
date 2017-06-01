@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #
-# MELODIC Logo Text Script
+# NEAT Logo Text Script
 # Copyright (C) 2017 by Thomas Dreibholz
 #
 # This program is free software: you can redistribute it and/or modify
@@ -27,9 +27,12 @@ otherFont="Eras"
 
 logoTitle="neat"
 logoSubtitle="A New, Evolutive API and Transport-Layer Architecture for the Internet"
-logoName="NEAT Project"
+# logoName="NEAT Project"
+# logoAffiliation="Simula Research Laboratory"
+# logoURL="https://www.neat-project.org"
+logoName="Thomas Dreibholz (托马斯博士)"
 logoAffiliation="Simula Research Laboratory"
-logoURL="https://www.neat-project.org"
+logoURL="dreibh@simula.no"
 
 # ------ Labels -------------------------------------------------------------
 $MAKE_LOGO ${prefix}-Title.png       "$logoTitle"       1024 30 "Golden"            "$logoFont"   &

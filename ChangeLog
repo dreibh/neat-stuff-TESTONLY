@@ -1,1 +1,57 @@
+commit b04202419914902e5d09825c586bdacdf66a75c1
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 1 17:00:47 2017 +0200
 
+    Added initial files.
+
+ BUGS                                       |   1 +
+ COPYING                                    | 674 +++++++++++++++++++++++++++++
+ ChangeLog                                  |   1 +
+ NEWS                                       |   1 +
+ README                                     |   1 +
+ build-deb                                  | 114 +++++
+ clean-deb                                  |  28 ++
+ debian.conf                                |  10 +
+ debian/changelog                           |   5 +
+ debian/compat                              |   1 +
+ debian/control                             | 124 ++++++
+ debian/copyright                           |  25 ++
+ debian/neat-desktop.install                |   4 +
+ debian/neat-desktop.postinst               |  13 +
+ debian/neat-desktop.postrm                 |  14 +
+ debian/neat-development.install            |   2 +
+ debian/neat-development.postinst           |  13 +
+ debian/neat-development.postrm             |  14 +
+ debian/neat-management.install             |   2 +
+ debian/neat-management.postinst            |  13 +
+ debian/neat-management.postrm              |  14 +
+ debian/rules                               |  28 ++
+ debian/source/format                       |   1 +
+ debian/upstream/signing-key.asc            | 405 +++++++++++++++++
+ debian/watch                               |   3 +
+ filter-empty-entries                       |  61 +++
+ make-deb                                   | 329 ++++++++++++++
+ make-dist                                  |  64 +++
+ make-ppa                                   |  12 +
+ src/background/Input/NEATDesktop1.jpeg     | Bin 0 -> 4360363 bytes
+ src/background/Input/NEATDevelopment1.jpeg | Bin 0 -> 3201461 bytes
+ src/background/Input/NEATManagement1.jpeg  | Bin 0 -> 3806532 bytes
+ src/background/Input/exiftool.argfile      |   3 +
+ src/background/Make-Background             |  62 +++
+ src/background/Make-Logo                   | 122 ++++++
+ src/background/Make-Mosaic                 |  88 ++++
+ src/background/Make-Painting               |  57 +++
+ src/background/image-resize-with-cropping  |  68 +++
+ src/background/images-to-pdf-a4            |  61 +++
+ src/background/make-a4                     |   5 +
+ src/background/make-all                    |   6 +
+ src/background/make-bootsplash             |  97 +++++
+ src/background/make-desktop                | 217 ++++++++++
+ src/background/make-logo-texts             |  49 +++
+ src/background/make-overlay                |  60 +++
+ src/grub/02_neat_management_theme          |  14 +
+ src/grub/06_neat_desktop_theme             |  14 +
+ src/grub/19_neat_development_theme         |  14 +
+ src/grub/grub-defaults                     |  17 +
+ update-changelog                           |   4 +
+ 50 files changed, 2935 insertions(+)
