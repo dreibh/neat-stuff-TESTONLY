@@ -1,0 +1,124 @@
+Source: neat-stuff
+Section: net
+Priority: optional
+Maintainer: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Homepage: https://www.neat-project.org
+Build-Depends: debhelper (>= 9),
+               exiftool,
+               gimp,
+               imagemagick,
+               libfile-fcntllock-perl,
+               python3-all,
+               python3-wand
+Standards-Version: 3.9.8
+X-Python3-Version: >= 3.2
+Vcs-Git: https://github.com/dreibh/neat-stuff.git
+Vcs-Browser: https://github.com/dreibh/neat-stuff/tags
+
+Package: neat-management
+Architecture: any
+Depends: apt-file,
+         apt-show-versions,
+         bridge-utils,
+         btrfs-tools,
+         bwm-ng,
+         colordiff,
+         cron,
+         cron-apt,
+         ethtool,
+         gddrescue,
+         git,
+         gpm,
+         hping3,
+         htop,
+         idn,
+         ipsec-tools,
+         joe,
+         kdump-tools,
+         libfile-fcntllock-perl,
+         libneat-examples,
+         libneat-socketapi-examples,
+         lksctp-tools,
+         lsb-base (>= 3.2-14),
+         mlocate,
+         netperfmeter,
+         nmap,
+         ntpdate,
+         reiserfsprogs,
+         rsplib-tools,
+         secure-delete,
+         smartmontools,
+         snmp,
+         software-properties-common,
+         sslscan,
+         subnetcalc,
+         tftp,
+         traceroute,
+         tree,
+         virt-what,
+         vlan,
+         whois,
+         ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
+Recommends: apport-retrace,
+            language-pack-de-base,
+            language-pack-en-base,
+            language-pack-nb-base,
+            linux-crashdump,
+            tshark,
+            update-motd
+Description: NEAT Management Tools
+ This metapackage contains basic software for NEAT system management.
+ The software installed provides a common working environment.
+ .
+ See https://www.neat-project.org for details on NEAT!
+
+Package: neat-development
+Architecture: any
+Depends: autoconf,
+         automake,
+         autopoint,
+         bison,
+         cmake,
+         debhelper,
+         devscripts,
+         flex,
+         gdb,
+         gnupg,
+         gnuplot,
+         imagemagick,
+         kbuild,
+         kernel-wedge,
+         libbz2-dev,
+         libneat-dev,
+         libneat-docs,
+         libneat-socketapi-dev,
+         libpcap-dev,
+         libsctp-dev,
+         libtool,
+         pbuilder,
+         pkg-config,
+         quilt,
+         r-base,
+         r-cran-ggplot2,
+         r-cran-hmisc,
+         valgrind,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: NEAT Development Tools
+ This meta-package contains basic software for NEAT development.
+ The software installed provides a common working environment.
+ .
+ See https://www.neat-project.org for details on NEAT!
+
+Package: neat-desktop
+Architecture: any
+Depends: neat-management,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: neon-desktop | kubuntu-desktop | lubuntu-desktop | ubuntu-desktop
+Description: NEAT Desktop
+ This meta-package contains the scripts to configure a NEAT desktop.
+ .
+ See https://www.neat-project.org for details on NEAT!

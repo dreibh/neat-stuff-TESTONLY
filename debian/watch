@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/neat-stuff-(\d\S*)\.tar\.gz/neat-stuff-$1\.tar\.gz/ \
+  https://github.com/dreibh/neat-stuff/tags .*/neat-stuff-(\d\S*)\.tar\.gz
