@@ -4,8 +4,8 @@ set -e
 
 case "$1" in
    remove|purge|abort-install)
-      rm -f /etc/grub.d/??_melodic_server_theme
-      update-grub
+      rm -f /etc/grub.d/??_neat_desktop_theme
+      update-grub || true
       ;;
 esac
 
