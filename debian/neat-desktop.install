@@ -1,4 +1,4 @@
-background/Desktop*.jpeg               /usr/share/neat-desktop/desktop
 # background/original/*.jpeg             /usr/share/neat-desktop/original
+background/Desktop*.jpeg               /usr/share/neat-desktop/desktop
 grub/??_neat_desktop_theme             /etc/grub.d
 grub/Splash-NEATDesktop1-1024x768.jpeg /boot
