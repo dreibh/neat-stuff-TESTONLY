@@ -28,8 +28,8 @@ cp NEWS README BUGS COPYING ChangeLog $PACKAGE-$UPSTREAM_VERSION
 # cp src/*.[0-9] $PACKAGE-$UPSTREAM_VERSION
 
 mkdir $PACKAGE-$UPSTREAM_VERSION/background
-mkdir $PACKAGE-$UPSTREAM_VERSION/background/original
-cp src/background/Input/* $PACKAGE-$UPSTREAM_VERSION/background/original/
+# mkdir $PACKAGE-$UPSTREAM_VERSION/background/original
+# cp src/background/Input/* $PACKAGE-$UPSTREAM_VERSION/background/original/ || true
 
 mkdir $PACKAGE-$UPSTREAM_VERSION/grub
 cp src/grub/*_theme $PACKAGE-$UPSTREAM_VERSION/grub/
