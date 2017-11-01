@@ -1,3 +1,130 @@
+commit 342716b8164d49bded867c831e2a9c3a902f813f
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Oct 20 16:08:26 2017 +0200
+
+    Script update.
+
+ debian/neat-desktop.install | 2 +-
+ make-ppa                    | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 5602fe56bc4a7cda86b2ab1135bb20a0e0df56c6
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Oct 20 16:07:53 2017 +0200
+
+    Minor updates.
+
+ debian/neat-desktop.install | 2 +-
+ make-dist                   | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 65fcb78ce39af86f43cde4c0e4e6155d3aecf249
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Oct 20 15:59:14 2017 +0200
+
+    Some clean-ups.
+
+ src/background/Input/Background1.fsf     |  18 ------------------
+ src/background/Input/Background1.png     | Bin 3841553 -> 0 bytes
+ src/background/Input/Background2.fsf     |  18 ------------------
+ src/background/Input/Background2.png     | Bin 5211359 -> 0 bytes
+ src/background/Input/Background3.fsf     |  18 ------------------
+ src/background/Input/Background3.png     | Bin 978218 -> 0 bytes
+ src/background/Input/Praha2.jpeg         | Bin 2453048 -> 0 bytes
+ src/background/Input/Praha4.jpeg         | Bin 2702735 -> 0 bytes
+ src/background/Input/Storage/Praha2.jpeg | Bin 0 -> 2453048 bytes
+ src/background/Input/Storage/Praha4.jpeg | Bin 0 -> 2702735 bytes
+ 10 files changed, 54 deletions(-)
+
+commit 5a5a3cbf2cb5b47419ab3d9d15506b4caad9ad23
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Oct 20 12:43:39 2017 +0200
+
+    Some post-install/post-removal script fixes.
+
+ debian/changelog                 | 6 ++++++
+ debian/neat-desktop.postinst     | 2 +-
+ debian/neat-desktop.postrm       | 4 ++--
+ debian/neat-development.postinst | 2 +-
+ debian/neat-development.postrm   | 4 ++--
+ debian/neat-management.postinst  | 2 +-
+ debian/neat-management.postrm    | 4 ++--
+ 7 files changed, 15 insertions(+), 9 deletions(-)
+
+commit 5a7270970eab0c56386df5a92717559cf1d55d7d
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Thu Jul 20 18:26:07 2017 +0200
+
+    Image update.
+
+ debian/changelog                 |   4 ++--
+ src/background/Input/Praha1.jpeg | Bin 0 -> 2848554 bytes
+ src/background/Input/Praha2.jpeg | Bin 0 -> 2453048 bytes
+ src/background/Input/Praha3.jpeg | Bin 0 -> 3245261 bytes
+ src/background/Input/Praha4.jpeg | Bin 0 -> 2702735 bytes
+ src/background/Input/Praha5.jpeg | Bin 0 -> 4123690 bytes
+ 6 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 1f7caabd6e7abde995447dbdd747ac6f69252a0b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Jul 5 11:01:06 2017 +0200
+
+    Added additional backgrounds.
+
+ debian/changelog                |   4 ++--
+ src/background/Input/Cork1.jpeg | Bin 0 -> 3249483 bytes
+ src/background/Input/Cork2.jpeg | Bin 0 -> 3362553 bytes
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+
+commit e5bb342b539cb63b20e428006e1b458617c9725c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Jun 12 14:02:19 2017 +0200
+
+    Build script update.
+
+ debian/changelog | 2 +-
+ make-deb         | 8 ++++----
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit d05327b020e935d4f70d2078dd234b92d026a2e9
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Jun 12 13:50:21 2017 +0200
+
+    Some updates.
+
+ debian/changelog                          |   4 ++--
+ src/background/Input/Background1.fsf      |  18 ++++++++++++++++++
+ src/background/Input/Background1.png      | Bin 0 -> 3841553 bytes
+ src/background/Input/Background2.fsf      |  18 ++++++++++++++++++
+ src/background/Input/Background2.png      | Bin 0 -> 5211359 bytes
+ src/background/Input/Background3.fsf      |  18 ++++++++++++++++++
+ src/background/Input/Background3.png      | Bin 0 -> 978218 bytes
+ src/background/Input/NEATDesktop1.jpeg    | Bin 4360363 -> 3806532 bytes
+ src/background/Input/NEATManagement1.jpeg | Bin 3806532 -> 4360363 bytes
+ 9 files changed, 56 insertions(+), 2 deletions(-)
+
+commit f6699aa06f49a3e5283c314c8d2b8d8e615ea166
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Jun 2 14:05:55 2017 +0200
+
+    Minor update.
+
+ src/background/make-desktop | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit e797d0de86fbbe0e350738867b029cd86438c77a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 1 17:04:22 2017 +0200
+
+    Minor updates.
+
+ ChangeLog                      | 56 ++++++++++++++++++++++++++++++++++++++++++
+ src/background/make-a4         |  4 +--
+ src/background/make-bootsplash |  2 +-
+ src/background/make-desktop    |  2 +-
+ src/background/make-logo-texts |  9 ++++---
+ 5 files changed, 66 insertions(+), 7 deletions(-)
+
 commit b04202419914902e5d09825c586bdacdf66a75c1
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Thu Jun 1 17:00:47 2017 +0200
