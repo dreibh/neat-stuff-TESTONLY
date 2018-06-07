@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9),
                libfile-fcntllock-perl,
                python3,
                python3-wand
-Standards-Version: 3.9.8
+Standards-Version: 4.1.4
 X-Python3-Version: >= 3.2
 Vcs-Git: https://github.com/dreibh/neat-stuff.git
 Vcs-Browser: https://github.com/dreibh/neat-stuff/tags
@@ -106,6 +106,7 @@ Depends: autoconf,
          valgrind,
          ${misc:Depends},
          ${shlibs:Depends}
+Recommends: ubuntu-dev-tools
 Description: NEAT Development Tools
  This meta-package contains basic software for NEAT development.
  The software installed provides a common working environment.

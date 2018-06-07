@@ -1,3 +1,97 @@
+commit c306da6c2d2860a7a23b11ef3e8078939eafc04d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 7 09:25:28 2018 +0200
+
+    Updated background configuration.
+
+ make-ppa                    | 2 +-
+ src/background/make-desktop | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit e43ce2b709119289a74de2c5ebfe00ff7bab1184
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 7 09:24:06 2018 +0200
+
+    Build script updates.
+
+ build-deb |  8 ++++----
+ clean-deb |  7 +++++--
+ make-deb  | 54 +++++++++++++++++++++++++++---------------------------
+ 3 files changed, 36 insertions(+), 33 deletions(-)
+
+commit 5346b82ee00ccee1506e724783c6d7701dee64c8
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Wed Feb 7 20:43:46 2018 +0100
+
+    An update.
+
+ src/background/Input/China1.jpeg | Bin 3916441 -> 3916323 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b88b540282cfa8c3e62b88b44a8bbb1f36921156
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Wed Feb 7 20:37:54 2018 +0100
+
+    Updated scripts.
+
+ debian/changelog                 |   6 +++++
+ src/background/Input/China1.jpeg | Bin 0 -> 3916441 bytes
+ src/background/make-bootsplash   |   8 +++---
+ src/background/make-desktop      |  53 +++++++++++++++++++++++++++------------
+ 4 files changed, 47 insertions(+), 20 deletions(-)
+
+commit a2af6eeabc645b71301570f6e5fd01d3080d0f26
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Thu Dec 28 10:30:17 2017 +0800
+
+    A fix.
+
+ src/background/make-desktop | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit f7b4b503868756490062fbf042ef8064d7a2aa0e
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Thu Dec 28 10:26:32 2017 +0800
+
+    Added image.
+
+ debian/changelog                      |   6 ++++++
+ src/background/Input/SantaClaus.jpeg  | Bin 7654582 -> 0 bytes
+ src/background/Input/SantaClaus1.jpeg | Bin 0 -> 7654582 bytes
+ src/background/Input/SantaClaus2.jpeg | Bin 0 -> 4549293 bytes
+ src/background/make-desktop           |   5 +++--
+ 5 files changed, 9 insertions(+), 2 deletions(-)
+
+commit 9192e9f62b8081f0492c4feb04238fd82ee7382e
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Wed Dec 27 11:54:36 2017 +0800
+
+    A fix.
+
+ debian/control | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2db2175cf105881c33ceb7e29bc5cd9a5b682cb5
+Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Date:   Wed Dec 27 11:30:41 2017 +0800
+
+    Added background image.
+
+ debian/changelog                     |   4 ++--
+ src/background/Input/SantaClaus.jpeg | Bin 0 -> 7654582 bytes
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 4d7db994d486c17833b43f63c28458a5d2a5977c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 1 10:21:16 2017 +0100
+
+    Script updates.
+
+ ChangeLog        | 127 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ debian/changelog |   6 +++
+ make-ppa         |   2 +-
+ 3 files changed, 134 insertions(+), 1 deletion(-)
+
 commit 342716b8164d49bded867c831e2a9c3a902f813f
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Fri Oct 20 16:08:26 2017 +0200
