@@ -1,3 +1,24 @@
+commit 79e084dc7e98171e5b8675812842788afd831f4a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 7 10:15:43 2018 +0200
+
+    Added missing dependency.
+
+ debian/control | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cf821d7f380974c58dfd0a94761ff82e0a532561
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 7 09:28:52 2018 +0200
+
+    Version bump.
+
+ ChangeLog        | 94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ debian/changelog |  6 ++++
+ debian/control   |  3 +-
+ debian/copyright |  4 +--
+ 4 files changed, 104 insertions(+), 3 deletions(-)
+
 commit c306da6c2d2860a7a23b11ef3e8078939eafc04d
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Thu Jun 7 09:25:28 2018 +0200
