@@ -1,2 +1,3 @@
-grub/??_neat_management_theme             /etc/grub.d
-grub/Splash-NEATManagement1-1024x768.jpeg /boot
+/etc/grub.d/??_neat_management_theme
+/usr/share/neat-desktop/Splash/NEATManagement1-1024x768.jpeg /boot/NEAT
+/usr/share/neat-desktop/Splash/neat-stuff-version /etc/neat

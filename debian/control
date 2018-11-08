@@ -3,14 +3,13 @@ Section: net
 Priority: optional
 Maintainer: Thomas Dreibholz <dreibh@iem.uni-due.de>
 Homepage: https://www.neat-project.org
-Build-Depends: debhelper (>= 9),
-               dh-python,
-               exiftool,
+Build-Depends: cmake,
+               debhelper (>= 9),
                gimp,
-               imagemagick,
+               graphicsmagick,
                libfile-fcntllock-perl,
-               python3,
-               python3-wand
+               libimage-exiftool-perl,
+               python3
 Standards-Version: 4.1.4
 Vcs-Git: https://github.com/dreibh/neat-stuff.git
 Vcs-Browser: https://github.com/dreibh/neat-stuff/tags
@@ -59,7 +58,6 @@ Depends: apt-file,
          vlan,
          whois,
          ${misc:Depends},
-         ${python3:Depends},
          ${shlibs:Depends}
 Recommends: apport-retrace,
             language-pack-de-base,
@@ -85,9 +83,10 @@ Depends: autoconf,
          devscripts,
          flex,
          gdb,
+         gimp,
          gnupg,
          gnuplot,
-         imagemagick,
+         graphicsmagick,
          kbuild,
          kernel-wedge,
          libbz2-dev,
@@ -99,6 +98,7 @@ Depends: autoconf,
          libtool,
          pbuilder,
          pkg-config,
+         python3,
          quilt,
          r-base,
          r-cran-ggplot2,
@@ -118,7 +118,8 @@ Architecture: any
 Depends: neat-management,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: neon-desktop | kubuntu-desktop | lubuntu-desktop | ubuntu-desktop
+Recommends: fractgen,
+            kubuntu-desktop | lubuntu-desktop | ubuntu-desktop
 Description: NEAT Desktop
  This meta-package contains the scripts to configure a NEAT desktop.
  .

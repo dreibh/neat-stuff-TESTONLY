@@ -1,5 +1,0 @@
-#!/bin/sh
-
-./images-to-pdf-a4 NEAT-A4.pdf \
-   Output/Desktop-with-Logo/NEATDesktop1-plain-2970x2100.jpeg \
-   Output/Text/Overlay-2970x2100.png
