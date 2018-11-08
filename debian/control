@@ -10,7 +10,7 @@ Build-Depends: cmake,
                libfile-fcntllock-perl,
                libimage-exiftool-perl,
                python3
-Standards-Version: 4.1.4
+Standards-Version: 4.2.1
 Vcs-Git: https://github.com/dreibh/neat-stuff.git
 Vcs-Browser: https://github.com/dreibh/neat-stuff/tags
 
