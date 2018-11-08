@@ -1,1 +1,1 @@
-${MAKE_LOGO} ${OUTPUT}   "NEAT"   1024 30 "Golden"   "Eras"
+${MAKE_LOGO} ${OUTPUT}   "neat"   512 30   "Golden"   "Eras"
