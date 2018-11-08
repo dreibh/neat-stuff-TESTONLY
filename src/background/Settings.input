@@ -48,14 +48,14 @@ SET(TDD_RESOLUTIONS
    1600x1200
    1920x1080   # Full HD 16:9
    1920x1200   # Full HD 16:10
-   2970x2100   # DIN A4
+#   2970x2100   # DIN A4
    3840x2160   # 4K 16:9
 )
 
 SET(TDD_VARIANTS
    plain
-#   mosaic
-#   oil
+   mosaic
+   oil
 #   cloth
 #   oldphoto
 )
@@ -80,6 +80,7 @@ SET(TDD_COPYRIGHT             "Copyright ${this_year} by Thomas Dreibholz")
 # ------ Inputs -------------------------------------------
 FILE(GLOB TDD_TEXT_FILES  "*.text")
 FILE(GLOB TDD_IMAGE_FILES "Input/*.[Jj][Pp][Ee][Gg]" "Input/*.[Jj][Pp][Gg]" "Input/*.[Pp][Nn][Gg]")
+# FILE(GLOB TDD_IMAGE_FILES "Input/NEATDesktop1.jpeg")
 
 SET(TDD_BUILD_OVERLAY "${CMAKE_CURRENT_SOURCE_DIR}/build-overlay")
 SET(TDD_BUILD_CAPTION "${CMAKE_CURRENT_SOURCE_DIR}/build-caption")
