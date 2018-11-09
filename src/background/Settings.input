@@ -55,7 +55,7 @@ SET(TDD_RESOLUTIONS
 SET(TDD_VARIANTS
    plain
    mosaic
-   oil
+#   oil
 #   cloth
 #   oldphoto
 )
