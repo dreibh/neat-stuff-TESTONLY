@@ -132,10 +132,10 @@ matrix:
       dist: xenial
       group: travis_latest
       env: DOCKER="fedora:30" VARIANT="fedora" TOOL="compile" COMPILER_C="clang" COMPILER_CXX="clang++"
-    - os: linux
-      dist: xenial
-      group: travis_latest
-      env: DOCKER="fedora:30" VARIANT="fedora" TOOL="mock"
+    #- os: linux
+      #dist: xenial
+      #group: travis_latest
+      #env: DOCKER="fedora:30" VARIANT="fedora" TOOL="mock"
 
     # ====== Fedora 29 ======================================================
     - os: linux
@@ -146,10 +146,10 @@ matrix:
       dist: xenial
       group: travis_latest
       env: DOCKER="fedora:29" VARIANT="fedora" TOOL="compile" COMPILER_C="clang" COMPILER_CXX="clang++"
-    - os: linux
-      dist: xenial
-      group: travis_latest
-      env: DOCKER="fedora:29" VARIANT="fedora" TOOL="mock"
+    #- os: linux
+      #dist: xenial
+      #group: travis_latest
+      #env: DOCKER="fedora:29" VARIANT="fedora" TOOL="mock"
 
     # ====== Fedora 28 ======================================================
     - os: linux
@@ -160,10 +160,10 @@ matrix:
       dist: xenial
       group: travis_latest
       env: DOCKER="fedora:28" VARIANT="fedora" TOOL="compile" COMPILER_C="clang" COMPILER_CXX="clang++"
-    - os: linux
-      dist: xenial
-      group: travis_latest
-      env: DOCKER="fedora:28" VARIANT="fedora" TOOL="mock"
+    #- os: linux
+      #dist: xenial
+      #group: travis_latest
+      #env: DOCKER="fedora:28" VARIANT="fedora" TOOL="mock"
 
     # ====== Fedora Rawhide =================================================
     - os: linux
@@ -174,10 +174,10 @@ matrix:
       dist: xenial
       group: travis_latest
       env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="compile" COMPILER_C="clang" COMPILER_CXX="clang++"
-    - os: linux
-      dist: xenial
-      group: travis_latest
-      env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="mock"
+    #- os: linux
+      #dist: xenial
+      #group: travis_latest
+      #env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="mock"
 
 
     # ###### Other ##########################################################
