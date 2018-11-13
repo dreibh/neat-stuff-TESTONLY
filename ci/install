@@ -74,7 +74,7 @@ EOF
 apt install -y software-properties-common
 apt-add-repository -sy ppa:dreibh/ppa
 apt-get update
-apt-add-repository "deb http://archive.ubuntu.com/ubuntu/ ${distribution}-backports main restricted universe multiverse"
+apt-add-repository \"deb http://archive.ubuntu.com/ubuntu/ ${distribution}-backports main restricted universe multiverse\"
 apt-get update || true
 EOF
 "
