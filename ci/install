@@ -58,6 +58,10 @@ MIRRORSITE=$mirror
 APTCACHEHARDLINK=no
 EXTRAPACKAGES=eatmydata
 EATMYDATA=yes
+# Multi-core: set concurrency level. The packaging scripts will handle it properly:
+cores=\\\`getconf _NPROCESSORS_ONLN\\\`
+export CONCURRENCY_LEVEL=\\\${cores}
+export DEB_BUILD_OPTIONS="parallel=\\\${cores}"
 EOF
 "
          sudo docker exec -t ubuntu-test bash -c "cat /etc/pbuilderrc"
