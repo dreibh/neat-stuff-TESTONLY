@@ -73,7 +73,7 @@ OUTER-EOF"
          sudo docker exec ubuntu-test bash -c "eatmydata pbuilder create --debootstrapopts --variant=buildd"
          sudo docker exec ubuntu-test bash -c "ls -l /var/cache/pbuilder/base.tgz"
 
-         # ====== Add ppa:dreibh/ppa and backports ==========================
+         # ====== Add ppa:dreibh/ppa, updates and backports =================
          if [ "$VARIANT" == "ubuntu" ] ; then
             echo "Ubuntu: adding adding ppa:dreibh/ppa and ${distribution}-backports ..."
             sudo docker exec ubuntu-test bash -c "eatmydata pbuilder login --save-after-login <<EOF
@@ -90,8 +90,9 @@ EOF"
 
             # NOTE: backports may be unavailable -> ignore error on apt-get update!
             sudo docker exec ubuntu-test bash -c "eatmydata pbuilder login --save-after-login <<EOF
-apt-add-repository \"deb http://archive.ubuntu.com/ubuntu/ ${distribution}-backports main restricted universe multiverse\"
-apt-get update
+apt-add-repository \"deb http://archive.ubuntu.com/ubuntu/ ${distribution}-updates main universe\"
+apt-add-repository \"deb http://archive.ubuntu.com/ubuntu/ ${distribution}-backports main universe\"
+apt-get update || true
 echo \"Package repositories:\"
 cat /etc/apt/sources.list
 cat /etc/apt/sources.list.d/*
@@ -104,7 +105,8 @@ EOF"
             echo "Debian adding ${distribution}-backports ..."
             sudo docker exec ubuntu-test bash -c "eatmydata pbuilder login --save-after-login <<EOF
 apt-get install -y software-properties-common
-apt-add-repository \"deb http://deb.debian.org/debian ${distribution}-backports main restricted universe multiverse\"
+apt-add-repository \"deb http://deb.debian.org/debian ${distribution}-updates main universe\"
+apt-add-repository \"deb http://deb.debian.org/debian ${distribution}-backports main universe\"
 apt-get update || true
 echo \"Package repositories:\"
 cat /etc/apt/sources.list
