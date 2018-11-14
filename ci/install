@@ -19,24 +19,28 @@
 # Contact: dreibh@iem.uni-due.de
 
 
+UBUNTU_MIRROR="se.archive.ubuntu.com"
+
+
 # ###### Linux ##############################################################
 if [ "$TRAVIS_OS_NAME" == "linux" ] ; then
    # ====== Ubuntu Linux ====================================================
    if [ "$VARIANT" == "ubuntu" -o "$VARIANT" == "debian" ] ; then
       UBUNTU_DEPS="`ci/get-dependencies $VARIANT`"
 
-      sudo docker exec -t ubuntu-test bash -c "apt-get update"
-      sudo docker exec -t ubuntu-test bash -c "apt-get install -y eatmydata"
+      sudo docker exec ubuntu-test bash -c "sed -e 's#http://archive.ubuntu.com/ubuntu/#http://${UBUNTU_MIRROR}/ubuntu/#g' -i /etc/apt/sources.list"
+      sudo docker exec ubuntu-test bash -c "apt-get update"
+      sudo docker exec ubuntu-test bash -c "apt-get install -y eatmydata"
 
       # ====== Ubuntu/Debian: set up compiler ===============================
       if [ "$TOOL" == "compile" ] ; then
-         sudo docker exec -t ubuntu-test bash -c "eatmydata apt-get install -y clang ${UBUNTU_DEPS}"
+         sudo docker exec ubuntu-test bash -c "eatmydata apt-get install -y clang ${UBUNTU_DEPS}"
 
       # ====== Ubuntu/Debian: set up pbuilder ===============================
       elif [ "$TOOL" == "pbuilder" ] ; then
-         sudo docker exec -t ubuntu-test bash -c "eatmydata apt-get install -y devscripts pbuilder ${UBUNTU_DEPS}"
+         sudo docker exec ubuntu-test bash -c "eatmydata apt-get install -y devscripts pbuilder ${UBUNTU_DEPS}"
 
-         distribution=`sudo docker exec -t ubuntu-test bash -c "lsb_release -cs" | sed -e "s/[^0-9a-zA-Z]//g"`
+         distribution=`sudo docker exec ubuntu-test bash -c "lsb_release -cs" | sed -e "s/[^0-9a-zA-Z]//g"`
          if [ "$VARIANT" == "debian" ] ; then
             if [[ "$DOCKER" =~ ^(debian:)(.*)$ ]] ; then
                distribution="${BASH_REMATCH[2]}"
@@ -45,7 +49,7 @@ if [ "$TRAVIS_OS_NAME" == "linux" ] ; then
          echo "distribution=$distribution"
 
          if [ "$VARIANT" == "ubuntu" ] ; then
-            mirror="http://archive.ubuntu.com/ubuntu/"
+            mirror="http://${UBUNTU_MIRROR}/ubuntu/"
          else
             mirror="http://deb.debian.org/debian"
          fi
@@ -53,7 +57,7 @@ if [ "$TRAVIS_OS_NAME" == "linux" ] ; then
 
          # ====== PBuilder environment ======================================
          echo "Creating pbuilder environment ..."
-         sudo docker exec -t ubuntu-test bash -c "cat >/etc/pbuilderrc <<OUTER-EOF
+         sudo docker exec ubuntu-test bash -c "cat >/etc/pbuilderrc <<OUTER-EOF
 DISTRIBUTION=$distribution
 COMPONENTS=\"main universe\"
 MIRRORSITE=$mirror
@@ -65,27 +69,40 @@ cores=\\\`getconf _NPROCESSORS_ONLN\\\`
 export CONCURRENCY_LEVEL=\\\${cores}
 export DEB_BUILD_OPTIONS=\"parallel=\\\${cores}\"
 OUTER-EOF"
-         sudo docker exec -t ubuntu-test bash -c "cat /etc/pbuilderrc"
-         sudo docker exec -t ubuntu-test bash -c "pbuilder create --debootstrapopts --variant=buildd"
+         sudo docker exec ubuntu-test bash -c "cat /etc/pbuilderrc"
+         sudo docker exec ubuntu-test bash -c "eatmydata pbuilder create --debootstrapopts --variant=buildd"
+         sudo docker exec ubuntu-test bash -c "ls -l /var/cache/pbuilder/base.tgz"
 
          # ====== Add ppa:dreibh/ppa and backports ==========================
-         # NOTE: backports may be unavailable -> ignore error on apt-get update!
          if [ "$VARIANT" == "ubuntu" ] ; then
             echo "Ubuntu: adding adding ppa:dreibh/ppa and ${distribution}-backports ..."
-            sudo docker exec -t ubuntu-test bash -c "pbuilder login --save-after-login <<EOF
+            sudo docker exec ubuntu-test bash -c "eatmydata pbuilder login --save-after-login <<EOF
 apt-get install -y software-properties-common
 apt-add-repository -y ppa:dreibh/ppa
 apt-get update
-apt-add-repository \"deb http://archive.ubuntu.com/ubuntu/ ${distribution}-backports main restricted universe multiverse\"
-apt-get update || true
 echo \"Package repositories:\"
 cat /etc/apt/sources.list
 cat /etc/apt/sources.list.d/*
 echo \"---\"
 EOF"
+            wait
+            sudo docker exec ubuntu-test bash -c "ls -l /var/cache/pbuilder/base.tgz"
+
+            # NOTE: backports may be unavailable -> ignore error on apt-get update!
+            sudo docker exec ubuntu-test bash -c "eatmydata pbuilder login --save-after-login <<EOF
+apt-add-repository \"deb http://archive.ubuntu.com/ubuntu/ ${distribution}-backports main restricted universe multiverse\"
+apt-get update
+echo \"Package repositories:\"
+cat /etc/apt/sources.list
+cat /etc/apt/sources.list.d/*
+echo \"---\"
+EOF"
+            wait
+            sudo docker exec ubuntu-test bash -c "ls -l /var/cache/pbuilder/base.tgz"
+
          elif [ "$VARIANT" == "debian" ] ; then
             echo "Debian adding ${distribution}-backports ..."
-            sudo docker exec -t ubuntu-test bash -c "pbuilder login --save-after-login <<EOF
+            sudo docker exec ubuntu-test bash -c "eatmydata pbuilder login --save-after-login <<EOF
 apt-get install -y software-properties-common
 apt-add-repository \"deb http://deb.debian.org/debian ${distribution}-backports main restricted universe multiverse\"
 apt-get update || true
@@ -93,20 +110,23 @@ echo \"Package repositories:\"
 cat /etc/apt/sources.list
 echo \"---\"
 EOF"
+            wait
          fi
+
+         echo "##### Checking ... #####"
+         sudo docker exec ubuntu-test bash -c "pbuilder login --save-after-login <<EOF
+echo \"Package repositories:\"
+cat /etc/apt/sources.list
+cat /etc/apt/sources.list.d/*
+echo \"---\"
+EOF"
+         echo "##### Done. #####"
+
 
       else
          echo >&2 "ERROR: Invalid setting of TOOL=$TOOL"
          exit 1
       fi
-
-      echo "##### Checking ... #####"
-      sudo docker exec -t ubuntu-test bash -c "pbuilder login --save-after-login <<EOF
-echo \"Package repositories:\"
-cat /etc/apt/sources.list
-echo \"---\"
-EOF"
-      echo "##### Done. #####"
 
 
    # ======Fedora Core Linux ================================================
@@ -115,11 +135,11 @@ EOF"
 
       # ====== Fedora: set up compiler ======================================
       if [ "$TOOL" == "compile" ] ; then
-         sudo docker exec -t ubuntu-test bash -c "dnf install -y make clang ${FEDORA_DEPS}"
+         sudo docker exec ubuntu-test bash -c "dnf install -y make clang ${FEDORA_DEPS}"
 
       # ====== Fedora: set up pbuilder ======================================
       elif [ "$TOOL" == "mock" ] ; then
-         sudo docker exec -t ubuntu-test bash -c "dnf install -y make findutils rpmdevtools fedora-release mock ${FEDORA_DEPS}"
+         sudo docker exec ubuntu-test bash -c "dnf install -y make findutils rpmdevtools fedora-release mock ${FEDORA_DEPS}"
 
       else
          echo >&2 "ERROR: Invalid setting of TOOL=$TOOL"
