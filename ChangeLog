@@ -1,3 +1,14 @@
+commit 1574a41743c6c51cc0c05353cef554eff5a940ce
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 22:15:57 2018 +0100
+
+    Version bump.
+
+ CMakeLists.txt   |   2 +-
+ ChangeLog        | 610 +++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ debian/changelog |   4 +-
+ 3 files changed, 596 insertions(+), 20 deletions(-)
+
 commit 040e82abeac66ea5732cc18649ddd90276d0c9a1
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Thu Nov 15 22:04:18 2018 +0100
