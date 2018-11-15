@@ -7,7 +7,7 @@ case "$1" in
       update-grub || true
 
       # Legacy file name links:
-      cd /usr/share/hencsat-desktop/desktop
+      cd /usr/share/neat-desktop/desktop
       files=`find . -maxdepth 1 -name "*.jpeg" -or -name "*.png" | xargs -n1 basename`
       for file in $files ; do
          if [ ! -L "$file" ] ; then
