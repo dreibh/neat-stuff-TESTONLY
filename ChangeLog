@@ -1,3 +1,582 @@
+commit 040e82abeac66ea5732cc18649ddd90276d0c9a1
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 22:04:18 2018 +0100
+
+    Path fix.
+
+ debian/neat-desktop.install     | 2 +-
+ debian/neat-development.install | 2 +-
+ debian/neat-management.install  | 4 ++--
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 4b2bb9bf1edd2219f37c3e8dca61f57b1be8a572
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 21:35:21 2018 +0100
+
+    Improved configuration.
+
+ debian/neat-desktop.install   |  2 +-
+ src/background/Settings.input | 10 +++++-----
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 12c1d60b639fe4c05af8b56eeefad77d9c1e7b99
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 21:31:38 2018 +0100
+
+    Another try.
+
+ debian/neat-desktop.postinst | 2 +-
+ debian/neat-desktop.postrm   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit a75f5982632a11da17dde03daff0d9d977b8e5a8
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 21:17:24 2018 +0100
+
+    sh -> bash.
+
+ debian/neat-desktop.postinst | 2 +-
+ debian/neat-desktop.postrm   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 32428a4253b7b7f69b08a94d3217e071adf9c137
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 21:05:00 2018 +0100
+
+    Another fix.
+
+ debian/neat-desktop.postinst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c8e1e7ddbf26f703a607b43089243eeea02b1aec
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 21:04:18 2018 +0100
+
+    A fix.
+
+ debian/neat-desktop.postinst | 17 +++++++++++++++++
+ debian/neat-desktop.postrm   | 10 ++++++++++
+ 2 files changed, 27 insertions(+)
+
+commit decca5887aa1be9a4dd5a6c5122ee25b9904d7a5
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 15 11:18:15 2018 +0100
+
+    Test script update.
+
+ ci/install  | 2 ++
+ ci/run-test | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit b1d4f64a9ea0259c82327f3c6368be664c793e7e
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 17:33:06 2018 +0100
+
+    Improved build scripts.
+
+ debian/control                | 2 +-
+ src/background/CMakeLists.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit b15ea2c333da4180b75a08254e3a6632685e17f0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 17:31:41 2018 +0100
+
+    Improved scripts.
+
+ ci/install  | 17 ++++++++++++-----
+ ci/run-test |  5 +++--
+ 2 files changed, 15 insertions(+), 7 deletions(-)
+
+commit 9100442241be601b4c20c4c1f1e739ce06b1299d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 13:22:27 2018 +0100
+
+    Another update.
+
+ CMakeLists.txt                | 2 +-
+ src/background/CMakeLists.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 135ea9f74a21e064a2430fc7ffb19effc483fd8c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 13:18:49 2018 +0100
+
+    Requires CMake >= 3.0, to ensure that CMAKE_INSTALL_FULL_SYSCONFDIR is correct.
+
+ debian/control | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 83d3491708cc0f030cc3f0d32c8822f551f4d0ad
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 13:18:39 2018 +0100
+
+    Improved scripts.
+
+ ci/get-dependencies | 60 +++++++++++++++++++++++++++++++++++++++++++++--------
+ ci/install          | 10 +++++----
+ 2 files changed, 57 insertions(+), 13 deletions(-)
+
+commit 02d5e1bc19577854d004d97a815b970783889fbf
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 12:29:00 2018 +0100
+
+    Improved scripts.
+
+ ci/before-install |  8 ++++++-
+ ci/install        | 66 ++++++++++++++++++++++++++++++++++++-------------------
+ 2 files changed, 50 insertions(+), 24 deletions(-)
+
+commit f19c84d34a542a4716d8e09b75e3e092247de877
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 14 00:08:40 2018 +0100
+
+    Updated scripts. Needs more testing.
+
+ ci/install  | 61 +++++++++++++++++++++++++++++++++----------------------------
+ ci/run-test | 10 +++++-----
+ 2 files changed, 38 insertions(+), 33 deletions(-)
+
+commit 284b0b8f20e48efa0486c5d15a2cd4b170b4428e
+Merge: 09d5f37 72ee6bd
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 18:07:34 2018 +0100
+
+    Merge branch 'dreibh/cmake' into dreibh/travis-ci
+
+commit 72ee6bd0a175653d30903661a8bf2b71f1e4c7d1
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 17:42:02 2018 +0100
+
+    Improved script.
+
+ src/background/CMakeLists.txt | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+
+commit fd6f80b8c166212fb2e5d2aaca17f5fcdc78af47
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 17:37:15 2018 +0100
+
+    Updated scripts.
+
+ ci/install  | 19 +++++++++++++++++++
+ ci/run-test | 12 ++++++------
+ 2 files changed, 25 insertions(+), 6 deletions(-)
+
+commit f4a6d9573e8f12656baa82f5c67e9346f62de771
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 13:10:50 2018 +0100
+
+    A fix.
+
+ ci/install | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 44226cabc248a73dfa419ed8cf8cc859f121cb3b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 12:43:33 2018 +0100
+
+    Improved script.
+
+ ci/install | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 51cc4cf440b7a3be61bff8d59538a483f1bc6307
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 12:04:08 2018 +0100
+
+    A fix.
+
+ src/background/gimp-scripts/Make-Background | 2 +-
+ src/background/gimp-scripts/Make-Caption    | 2 +-
+ src/background/gimp-scripts/Make-Cloth      | 2 +-
+ src/background/gimp-scripts/Make-Logo       | 2 +-
+ src/background/gimp-scripts/Make-Mosaic     | 2 +-
+ src/background/gimp-scripts/Make-OldPhoto   | 2 +-
+ src/background/gimp-scripts/Make-Painting   | 2 +-
+ 7 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 7d8a2eba8367bd08d8de7707fc3c65cc305b5145
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 12:03:44 2018 +0100
+
+    Improved script.
+
+ debian.conf                           |  2 +-
+ src/background/gimp-scripts/Test-Gimp | 12 +++++++++++-
+ 2 files changed, 12 insertions(+), 2 deletions(-)
+
+commit 3d6e1813ea04241bb3aa27e295c9e229b92528d7
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 11:55:06 2018 +0100
+
+    Minor update.
+
+ make-deb | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit dc71c9ce3b591e1af9c8ca80254f40d0842e26b2
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 11:29:19 2018 +0100
+
+    A fix.
+
+ src/grub/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 779e97c6949d7135a9a25754030ab12f861c5451
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 11:14:08 2018 +0100
+
+    Updated script.
+
+ ci/get-dependencies | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+commit 5f3a62529db503f1743721e64f2547fb763a0f94
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 11:08:17 2018 +0100
+
+    No Fedora build, yet.
+
+ .travis.yml | 78 ++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 39 insertions(+), 39 deletions(-)
+
+commit cb7d6219075a40ef4cac76c3f114012d287fa9a0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 11:07:25 2018 +0100
+
+    Improved Travis CI configuration.
+
+ .travis.yml | 48 ------------------------------------------------
+ 1 file changed, 48 deletions(-)
+
+commit d85caa5320b1e3d5bbd4a953d5db09a89ccffc35
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 11:07:19 2018 +0100
+
+    Improved script.
+
+ src/background/build-overlay | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit f21c92f296d9aaa9f56dcaca78b122638dd018ef
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 10:48:09 2018 +0100
+
+    Dependency fixes.
+
+ debian/control | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 22472a2edd2489464cc82aeea5b30e9f28b697c7
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 13 10:20:53 2018 +0100
+
+    Improved scripts: adding backports to Ubuntu containers.
+
+ ci/build    |  2 +-
+ ci/install  | 11 +++++++----
+ ci/run-test | 27 ++++++++++++++++++++++++---
+ 3 files changed, 32 insertions(+), 8 deletions(-)
+
+commit 09d5f371954f37b8dc0a911362c66719327e9a4a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 11 23:40:20 2018 +0100
+
+    A fix.
+
+ src/grub/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 98b96f698a44edb551f35900e8d6f42c344201c0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 11 21:48:13 2018 +0100
+
+    A fix.
+
+ .travis.yml         | 72 ++++++++++++++++++++++++++---------------------------
+ ci/get-dependencies |  6 +++--
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+
+commit d70dd17d6e7d16b25a99deca1eb993dcb9e20179
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 11 21:10:30 2018 +0100
+
+    A fix.
+
+ ci/get-dependencies | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bd3e3d568f04fee50366c9cc716d129b87fa19e3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 11 20:57:28 2018 +0100
+
+    An update.
+
+ .travis.yml |  32 +++++------
+ make-rpm    | 176 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 192 insertions(+), 16 deletions(-)
+
+commit 620dedc2bef21afa66a971d5ec6b67f0b843861e
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 11 20:50:49 2018 +0100
+
+    Updated Travis CI configuration.
+
+ .travis.yml         | 165 ++++++++++++++++++++++++++++++++++------------------
+ build-deb           |   2 +-
+ ci/before-install   |  37 ++++++++++++
+ ci/build            |  56 ++++++++++++++++++
+ ci/get-dependencies |  72 +++++++++++++++++++++++
+ ci/install          | 112 +++++++++++++++++++++++++++++++++++
+ ci/run-test         |   6 ++
+ 7 files changed, 394 insertions(+), 56 deletions(-)
+
+commit 9557529e92e31cdc7fee8007342a74cf446fdbdb
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Nov 9 16:12:43 2018 +0100
+
+    Updated settings.
+
+ src/background/Settings.input | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bc8055d0feb12f06bc3f0ac49c413c44b65f0047
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Nov 9 12:19:43 2018 +0100
+
+    Filter out some more useless gimp warnings.
+
+ src/background/gimp-scripts/Make-Caption  | 2 +-
+ src/background/gimp-scripts/Make-Cloth    | 2 +-
+ src/background/gimp-scripts/Make-Logo     | 8 ++++----
+ src/background/gimp-scripts/Make-Mosaic   | 2 +-
+ src/background/gimp-scripts/Make-OldPhoto | 2 +-
+ src/background/gimp-scripts/Make-Painting | 2 +-
+ src/background/gimp-scripts/Test-Gimp     | 2 +-
+ 7 files changed, 10 insertions(+), 10 deletions(-)
+
+commit d1b859e2fe171e949db09246a0da3265f3f2158d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 23:10:28 2018 +0100
+
+    Small clean-ups.
+
+ src/background/CMakeLists.txt | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+commit eac1369ff0eda6810e4a97d8d8216a5d8253d2ac
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 23:04:56 2018 +0100
+
+    Fix in CMakeLists.txt for grub configuration installation.
+
+ src/grub/CMakeLists.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 12481b904077f7963718e7a8359d7332bcb9cb5a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 22:54:32 2018 +0100
+
+    Fixed dependencies.
+
+ .travis.yml    | 4 ++--
+ debian/control | 4 ++++
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+commit 2c9a1b5647048faad3e44087644649800d794413
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 22:28:59 2018 +0100
+
+    Added comment.
+
+ src/background/build-overlay | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit c42a1d09c7de4696f646323b141a103550c2a0c0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 21:37:22 2018 +0100
+
+    A fix.
+
+ src/background/gimp-scripts/Make-Logo | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 6889c972de58c0d5536d53663f0c24be5059c52a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 21:36:36 2018 +0100
+
+    Added comment.
+
+ src/background/Name.text | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 89807168d4c5bc08c23f6c73c8e14412de4621d1
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 21:31:01 2018 +0100
+
+    Improved scripts.
+
+ CMakeLists.txt                | 2 +-
+ debian/changelog              | 2 +-
+ debian/control                | 6 ++++--
+ src/background/CMakeLists.txt | 9 +++++++++
+ 4 files changed, 15 insertions(+), 4 deletions(-)
+
+commit f8aee0ee3e8e3a1f8b451ea41f3ea526a6843b7e
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 20:07:05 2018 +0100
+
+    Minor updates.
+
+ src/background/Settings.input | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 5b0287528bb964672105154470df81a971cd4996
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 20:05:28 2018 +0100
+
+    Some updates.
+
+ debian/control                                            | 4 ++++
+ src/background/Affiliation.text                           | 2 +-
+ src/background/Name.text                                  | 2 +-
+ src/background/Settings.input                             | 7 ++++---
+ src/background/Subtitle.text                              | 2 +-
+ src/background/Title.text                                 | 2 +-
+ src/background/URL.text                                   | 2 +-
+ src/grub/{06_neat_desktop_theme => 42_neat_desktop_theme} | 0
+ 8 files changed, 13 insertions(+), 8 deletions(-)
+
+commit 3b95adef52847be65ad343df12be815c9b432dac
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 14:03:16 2018 +0100
+
+    An update.
+
+ src/background/Affiliation.text | 2 +-
+ src/background/Name.text        | 2 +-
+ src/background/Subtitle.text    | 2 +-
+ src/background/Title.text       | 2 +-
+ src/background/URL.text         | 2 +-
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+
+commit c924fb2ab4af7c0e0d2ba6f5b8d72b01cb463182
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:54:55 2018 +0100
+
+    Minor update.
+
+ debian/control            | 2 +-
+ src/background/Title.text | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 394d34878a02dc409a6d5bc2c431c8968c715e23
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:47:30 2018 +0100
+
+    Some fixes and improvements.
+
+ debian/neat-desktop.install        |  1 +
+ src/background/Settings.input      | 16 ++++++++--------
+ src/background/Title.text          |  2 +-
+ src/grub/02_neat_management_theme  |  2 +-
+ src/grub/06_neat_desktop_theme     |  2 +-
+ src/grub/19_neat_development_theme |  2 +-
+ 6 files changed, 13 insertions(+), 12 deletions(-)
+
+commit e9162ff03298130a393813b25b823870220de134
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:19:38 2018 +0100
+
+    Added Travis CI configuration.
+
+ .travis.yml | 149 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 149 insertions(+)
+
+commit 949e9c6b44eba30fe146e5c0b829b1bf15c6a14c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:19:02 2018 +0100
+
+    Minor updates.
+
+ debian/changelog | 2 +-
+ debian/watch     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 85e1e5209dabf191c258e4e20c6395a73d37d868
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:13:48 2018 +0100
+
+    Updated scripts.
+
+ make-deb | 26 +++++++++++++++-----------
+ 1 file changed, 15 insertions(+), 11 deletions(-)
+
+commit 2bf6c6a7c05ac5f4a70ddc73d47f9c9b3b7787cd
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:13:33 2018 +0100
+
+    Added some packaging files.
+
+ debian/tests/control     |  1 +
+ debian/upstream/metadata |  7 ++++++
+ make-dist                | 64 ------------------------------------------------
+ 3 files changed, 8 insertions(+), 64 deletions(-)
+
+commit ee64807d6065ec2d53174fb233a13ac1f65f073d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 8 12:09:05 2018 +0100
+
+    Added CMake build files.
+
+ CMakeLists.txt                                    | 105 ++++
+ autogen.sh                                        |  18 +
+ debian.conf                                       |   2 +-
+ debian/changelog                                  |   6 +
+ debian/control                                    |  19 +-
+ debian/neat-desktop.install                       |   7 +-
+ debian/neat-development.install                   |   4 +-
+ debian/neat-management.install                    |   5 +-
+ debian/rules                                      |  21 +-
+ src/CMakeLists.txt                                |  16 +
+ src/background/Affiliation.text                   |   1 +
+ src/background/CMakeLists.txt                     | 556 ++++++++++++++++++++++
+ src/background/Make-Logo                          | 122 -----
+ src/background/Name.text                          |   1 +
+ src/background/Settings.input                     | 109 +++++
+ src/background/Subtitle.text                      |   1 +
+ src/background/Title.text                         |   1 +
+ src/background/URL.text                           |   1 +
+ src/background/build-caption                      |  40 ++
+ src/background/build-overlay                      | 114 +++++
+ src/background/{ => gimp-scripts}/Make-Background |  14 +-
+ src/background/gimp-scripts/Make-Caption          |  99 ++++
+ src/background/gimp-scripts/Make-Cloth            |  62 +++
+ src/background/gimp-scripts/Make-Logo             | 393 +++++++++++++++
+ src/background/{ => gimp-scripts}/Make-Mosaic     |  30 +-
+ src/background/gimp-scripts/Make-OldPhoto         |  68 +++
+ src/background/{ => gimp-scripts}/Make-Painting   |  10 +-
+ src/background/gimp-scripts/Resize-with-Cropping  |  96 ++++
+ src/background/gimp-scripts/Test-Gimp             |  26 +
+ src/background/image-resize-with-cropping         |  68 ---
+ src/background/images-to-pdf-a4                   |  61 ---
+ src/background/make-a4                            |   5 -
+ src/background/make-all                           |   6 -
+ src/background/make-bootsplash                    |  97 ----
+ src/grub/CMakeLists.txt                           |   8 +
+ 35 files changed, 1781 insertions(+), 411 deletions(-)
+
+commit be5be54c87f42d756186d81b9be52d8631f6d2c3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jun 7 10:16:10 2018 +0200
+
+    Updated changelog.
+
+ ChangeLog | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
 commit 79e084dc7e98171e5b8675812842788afd831f4a
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Thu Jun 7 10:15:43 2018 +0200
@@ -76,12 +655,11 @@ Date:   Thu Dec 28 10:26:32 2017 +0800
 
     Added image.
 
- debian/changelog                      |   6 ++++++
- src/background/Input/SantaClaus.jpeg  | Bin 7654582 -> 0 bytes
- src/background/Input/SantaClaus1.jpeg | Bin 0 -> 7654582 bytes
- src/background/Input/SantaClaus2.jpeg | Bin 0 -> 4549293 bytes
- src/background/make-desktop           |   5 +++--
- 5 files changed, 9 insertions(+), 2 deletions(-)
+ debian/changelog                                      |   6 ++++++
+ .../Input/{SantaClaus.jpeg => SantaClaus1.jpeg}       | Bin
+ src/background/Input/SantaClaus2.jpeg                 | Bin 0 -> 4549293 bytes
+ src/background/make-desktop                           |   5 +++--
+ 4 files changed, 9 insertions(+), 2 deletions(-)
 
 commit 9192e9f62b8081f0492c4feb04238fd82ee7382e
 Author: Thomas Dreibholz <dreibh@iem.uni-due.de>
@@ -139,17 +717,15 @@ Date:   Fri Oct 20 15:59:14 2017 +0200
 
     Some clean-ups.
 
- src/background/Input/Background1.fsf     |  18 ------------------
- src/background/Input/Background1.png     | Bin 3841553 -> 0 bytes
- src/background/Input/Background2.fsf     |  18 ------------------
- src/background/Input/Background2.png     | Bin 5211359 -> 0 bytes
- src/background/Input/Background3.fsf     |  18 ------------------
- src/background/Input/Background3.png     | Bin 978218 -> 0 bytes
- src/background/Input/Praha2.jpeg         | Bin 2453048 -> 0 bytes
- src/background/Input/Praha4.jpeg         | Bin 2702735 -> 0 bytes
- src/background/Input/Storage/Praha2.jpeg | Bin 0 -> 2453048 bytes
- src/background/Input/Storage/Praha4.jpeg | Bin 0 -> 2702735 bytes
- 10 files changed, 54 deletions(-)
+ src/background/Input/Background1.fsf           |  18 ------------------
+ src/background/Input/Background1.png           | Bin 3841553 -> 0 bytes
+ src/background/Input/Background2.fsf           |  18 ------------------
+ src/background/Input/Background2.png           | Bin 5211359 -> 0 bytes
+ src/background/Input/Background3.fsf           |  18 ------------------
+ src/background/Input/Background3.png           | Bin 978218 -> 0 bytes
+ src/background/Input/{ => Storage}/Praha2.jpeg | Bin
+ src/background/Input/{ => Storage}/Praha4.jpeg | Bin
+ 8 files changed, 54 deletions(-)
 
 commit 5a5a3cbf2cb5b47419ab3d9d15506b4caad9ad23
 Author: Thomas Dreibholz <dreibh@simula.no>
