@@ -1,4 +1,4 @@
 /etc/grub.d/??_neat_desktop_theme
 /usr/share/neat-desktop/desktop/*.jpeg
 /usr/share/neat-desktop/NEAT-A4.pdf
-/usr/share/neat-desktop/Splash/NEATDesktop1-1024x768.jpeg /boot/NEAT
+/usr/share/neat-desktop/splash/NEATDesktop1-1024x768.jpeg /boot/NEAT
