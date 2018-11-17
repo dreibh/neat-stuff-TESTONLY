@@ -50,7 +50,9 @@ make %{?_smp_mflags}
 make DESTDIR=%{buildroot} install
 # ====== Relocate files =====================================================
 mkdir -p %{buildroot}/boot/NEAT
-mv %{buildroot}/usr/share/neat-desktop/splash/*-1024x768.jpeg %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/NEATManagement1-1024x768.jpeg  %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/NEATDevelopment1-1024x768.jpeg %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/NEATDesktop1-1024x768.jpeg     %{buildroot}/boot/NEAT
 mkdir -p %{buildroot}/etc/neat
 mv %{buildroot}/usr/share/neat-desktop/splash/neat-stuff-version %{buildroot}/etc/neat
 # ===========================================================================
@@ -109,8 +111,9 @@ See https://www.neat-project.org for details on NEAT!
 
 %files management
 /boot/NEAT/NEATManagement1-1024x768.jpeg
-/etc/grub.d/??_neat_development_theme
+/etc/grub.d/??_neat_management_theme
 /etc/neat/neat-stuff-version
+/usr/share/neat-stuff/grub-defaults
 
 %post management
 cp /usr/share/neat/grub-defaults /etc/default/grub
@@ -211,6 +214,7 @@ See https://www.neat-project.org for details on NEAT!
 /usr/share/neat-desktop/background/*
 /usr/share/neat-desktop/desktop/*
 /usr/share/neat-desktop/NEAT-A4.pdf
+%ghost /usr/share/neat-desktop/splash
 
 %post desktop
 cp /usr/share/neat/grub-defaults /etc/default/grub
