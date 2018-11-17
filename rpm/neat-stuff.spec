@@ -188,13 +188,6 @@ rm -f /etc/grub.d/??_nornet_desktop_theme
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 
-%package api
-Summary: NEAT API
-Group: Applications/Internet
-Requires: %{name}-management = %{version}-%{release}
-Requires: %{name}-api = %{version}-%{release}
-
-
 %package desktop
 Summary: NEAT Desktop
 Group: Applications/Internet
