@@ -184,7 +184,6 @@ See https://www.neat-project.org for details on NEAT!
 %files development
 /boot/NEAT/NEATDevelopment1-1024x768.jpeg
 /etc/grub.d/??_neat_development_theme
-/etc/pbuilderrc
 
 %post development
 cp /usr/share/neat/grub-defaults /etc/default/grub
