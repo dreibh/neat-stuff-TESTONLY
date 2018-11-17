@@ -48,6 +48,12 @@ make %{?_smp_mflags}
 
 %install
 make DESTDIR=%{buildroot} install
+# ====== Relocate files =====================================================
+mkdir -p %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/*-1024x768.jpeg %{buildroot}/boot/NEAT
+mkdir -p %{buildroot}/etc/neat
+mv %{buildroot}/usr/share/neat-desktop/splash/neat-stuff-version %{buildroot}/etc/neat
+# ===========================================================================
 
 
 %package management
@@ -103,14 +109,15 @@ See https://www.neat-project.org for details on NEAT!
 
 %files management
 /boot/NEAT/NEATManagement1-1024x768.jpeg
-/etc/grub.d/??_nornet_development_theme
+/etc/grub.d/??_neat_development_theme
+/etc/neat/neat-stuff-version
 
 %post management
-cp /usr/share/nornet/grub-defaults /etc/default/grub
+cp /usr/share/neat/grub-defaults /etc/default/grub
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 %postun management
-rm -f /etc/grub.d/??_nornet_desktop_theme
+rm -f /etc/grub.d/??_neat_desktop_theme
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 
@@ -176,15 +183,15 @@ See https://www.neat-project.org for details on NEAT!
 
 %files development
 /boot/NEAT/NEATDevelopment1-1024x768.jpeg
-/etc/grub.d/??_nornet_development_theme
+/etc/grub.d/??_neat_development_theme
 /etc/pbuilderrc
 
 %post development
-cp /usr/share/nornet/grub-defaults /etc/default/grub
+cp /usr/share/neat/grub-defaults /etc/default/grub
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 %postun development
-rm -f /etc/grub.d/??_nornet_desktop_theme
+rm -f /etc/grub.d/??_neat_desktop_theme
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 
@@ -201,17 +208,17 @@ See https://www.neat-project.org for details on NEAT!
 
 %files desktop
 /boot/NEAT/NEATDesktop1-1024x768.jpeg
-/etc/grub.d/??_nornet_desktop_theme
-/usr/share/nornet-desktop/background/*
-/usr/share/nornet-desktop/desktop/*
-/usr/share/nornet-desktop/NEAT-A4.pdf
+/etc/grub.d/??_neat_desktop_theme
+/usr/share/neat-desktop/background/*
+/usr/share/neat-desktop/desktop/*
+/usr/share/neat-desktop/NEAT-A4.pdf
 
 %post desktop
-cp /usr/share/nornet/grub-defaults /etc/default/grub
+cp /usr/share/neat/grub-defaults /etc/default/grub
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 %postun desktop
-rm -f /etc/grub.d/??_nornet_desktop_theme
+rm -f /etc/grub.d/??_neat_desktop_theme
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 
