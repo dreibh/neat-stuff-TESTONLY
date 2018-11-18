@@ -17,7 +17,7 @@
 # Contact: dreibh@simula.no
 
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
-PROJECT(neat-stuff NONE)
+PROJECT(neat-stuff LANGUAGES C)
 
 SET(BUILD_MAJOR "0")
 SET(BUILD_MINOR "7")
