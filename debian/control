@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Thomas Dreibholz <dreibh@iem.uni-due.de>
 Homepage: https://www.neat-project.org
-Build-Depends: cmake (>= 3.0) | cmake3,
+Build-Depends: cmake (>= 3.0.2) | cmake3,
                debhelper (>= 9),
                fonts-dejavu,
                fonts-noto-cjk,
@@ -16,8 +16,8 @@ Build-Depends: cmake (>= 3.0) | cmake3,
                libimage-exiftool-perl,
                python3
 Standards-Version: 4.2.1
-Vcs-Git: https://github.com/dreibh/neat-stuff.git
-Vcs-Browser: https://github.com/dreibh/neat-stuff/tags
+Vcs-Git: https://bitbucket.org/dreibh/neat-stuff.git
+Vcs-Browser: https://bitbucket.org/dreibh/neat-stuff/tags
 
 Package: neat-management
 Architecture: any
