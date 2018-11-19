@@ -1,5 +1,5 @@
 # MELODIC/NorNet Build Scripts
-# Copyright (C) 2017-2018 by Thomas Dreibholz
+# Copyright (C) 2017-2019 by Thomas Dreibholz
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ PROJECT(neat-stuff NONE)
 
 SET(BUILD_MAJOR "0")
 SET(BUILD_MINOR "6")
-SET(BUILD_PATCH "0~rc1.1")
+SET(BUILD_PATCH "0")
 SET(BUILD_VERSION ${BUILD_MAJOR}.${BUILD_MINOR}.${BUILD_PATCH})
 
 

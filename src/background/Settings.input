@@ -1,7 +1,7 @@
 #!/bin/bash -e
 #
 # NEAT Logo Script
-# Copyright (C) 2017-2018 by Thomas Dreibholz
+# Copyright (C) 2017-2019 by Thomas Dreibholz
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -91,11 +91,11 @@ SET(TDD_FLAT_DIRECTORY_STRUCTURE 1)
 SET(TDD_OUTPUT_DIRECTORY         "Output")
 SET(TDD_INSTALL_SUBDIRECTORY     "neat-desktop")   # Install under [PREFIX]/share/${TDD_INSTALL_SUBDIRECTORY}
 SET(TDD_INSTALL_ORIGINALS        0)
-SET(TDD_OUTPUT_OVERLAY           "Overlay")
-SET(TDD_OUTPUT_ORIGINALS         "Original")
-SET(TDD_OUTPUT_WITHOUT_LOGO      "Desktop-without-Logo")
-SET(TDD_OUTPUT_WITH_LOGO         "Desktop-with-Logo")
-SET(TDD_OUTPUT_SPLASH            "Splash")
+SET(TDD_OUTPUT_OVERLAY           "overlay")
+SET(TDD_OUTPUT_ORIGINALS         "original")
+SET(TDD_OUTPUT_WITHOUT_LOGO      "plain")
+SET(TDD_OUTPUT_WITH_LOGO         "desktop")
+SET(TDD_OUTPUT_SPLASH            "splash")
 SET(TDD_OUTPUT_CAPTIONFILE       "neat-stuff-version")
 
 # ------ Programs -----------------------------------------
