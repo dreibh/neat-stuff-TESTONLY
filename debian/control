@@ -35,6 +35,7 @@ Depends: apt-file,
          ethtool,
          git,
          gpm,
+         grub2-common | grub,
          hping3,
          htop,
          idn,
@@ -106,6 +107,7 @@ Depends: autoconf,
          gnupg,
          gnuplot,
          graphicsmagick,
+         grub2-common | grub,
          gsfonts,
          kernel-package,
          libbz2-dev,
@@ -145,7 +147,8 @@ Description: NEAT Development Tools
 
 Package: neat-desktop
 Architecture: any
-Depends: neat-management,
+Depends: grub2-common | grub,
+         neat-management,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: fractgen,
