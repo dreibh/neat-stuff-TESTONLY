@@ -4,23 +4,27 @@ set -e
 
 case "$1" in
    configure)
-      update-grub || true
+      if [ -x /usr/sbin/update-grub ] ; then
+         /usr/sbin/update-grub || true
+      fi
 
       # Legacy file name links:
-      cd /usr/share/neat-desktop/desktop
-      files=`find . -maxdepth 1 -name "*.jpeg" -or -name "*.png" | xargs -n1 basename`
-      for file in $files ; do
-         if [ ! -L "$file" ] ; then
-            if [[ "$file" =~ ^(.*)-([0-9]*x[0-9]*)([-][a-z]*)\.(png|jpeg)$ ]] ; then
-               type="${BASH_REMATCH[3]}"
-               if [ "$type" == "-plain" ] ; then
-                  type=""
+      if [ -d /usr/share/neat-desktop/desktop ] ; then
+         cd /usr/share/neat-desktop/desktop
+         files=`find . -maxdepth 1 -name "*.jpeg" -or -name "*.png" | xargs -n1 basename`
+         for file in $files ; do
+            if [ ! -L "$file" ] ; then
+               if [[ "$file" =~ ^(.*)-([0-9]*x[0-9]*)([-][a-z]*)\.(png|jpeg)$ ]] ; then
+                  type="${BASH_REMATCH[3]}"
+                  if [ "$type" == "-plain" ] ; then
+                     type=""
+                  fi
+                  link="Desktop-${BASH_REMATCH[1]}${type}-${BASH_REMATCH[2]}.${BASH_REMATCH[4]}"
+                  rm -f "$link" ; ln -s "$file" "$link"
                fi
-               link="Desktop-${BASH_REMATCH[1]}${type}-${BASH_REMATCH[2]}.${BASH_REMATCH[4]}"
-               rm -f "$link" ; ln -s "$file" "$link"
             fi
-         fi
-      done
+         done
+      fi
 
       ;;
 esac

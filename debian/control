@@ -35,7 +35,6 @@ Depends: apt-file,
          ethtool,
          git,
          gpm,
-         grub2-common | grub,
          hping3,
          htop,
          idn,
@@ -62,7 +61,6 @@ Depends: apt-file,
          smartmontools,
          snmp,
          software-properties-common,
-         sslscan,
          subnetcalc,
          tcpdump,
          tftp,
@@ -74,10 +72,12 @@ Depends: apt-file,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: apport-retrace,
+            grub2-common,
             language-pack-de-base,
             language-pack-en-base,
             language-pack-nb-base,
             linux-crashdump,
+            sslscan,
             tshark,
             update-motd
 Description: NEAT Management Tools
@@ -107,7 +107,6 @@ Depends: autoconf,
          gnupg,
          gnuplot,
          graphicsmagick,
-         grub2-common | grub,
          gsfonts,
          kernel-package,
          libbz2-dev,
@@ -138,7 +137,8 @@ Depends: autoconf,
          valgrind,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: ubuntu-dev-tools
+Recommends: grub2-common,
+            ubuntu-dev-tools
 Description: NEAT Development Tools
  This meta-package contains basic software for NEAT development.
  The software installed provides a common working environment.
@@ -147,8 +147,7 @@ Description: NEAT Development Tools
 
 Package: neat-desktop
 Architecture: any
-Depends: grub2-common | grub,
-         neat-management,
+Depends: neat-management,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: fractgen,

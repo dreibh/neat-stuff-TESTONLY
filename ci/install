@@ -19,7 +19,7 @@
 # Contact: dreibh@iem.uni-due.de
 
 
-UBUNTU_MIRROR="se.archive.ubuntu.com"
+UBUNTU_MIRROR="archive.ubuntu.com"
 
 
 # ###### Linux ##############################################################

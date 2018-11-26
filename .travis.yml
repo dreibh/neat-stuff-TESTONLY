@@ -93,47 +93,47 @@ matrix:
       env: DOCKER="debian:stretch" VARIANT="debian" TOOL="pbuilder"
 
 
-    ## ###### Fedora Linux ###################################################
+    # ###### Fedora Linux ###################################################
 
-    ## ====== Fedora 30 ======================================================
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:30" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:30" VARIANT="fedora" TOOL="mock"
+    # ====== Fedora 30 ======================================================
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:30" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:30" VARIANT="fedora" TOOL="mock"
 
-    ## ====== Fedora 29 ======================================================
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:29" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:29" VARIANT="fedora" TOOL="mock"
+    # ====== Fedora 29 ======================================================
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:29" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:29" VARIANT="fedora" TOOL="mock"
 
-    ## ====== Fedora 28 ======================================================
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:28" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:28" VARIANT="fedora" TOOL="mock"
+    # ====== Fedora 28 ======================================================
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:28" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:28" VARIANT="fedora" TOOL="mock"
 
-    ## ====== Fedora Rawhide =================================================
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
-    #- os: linux
-      #dist: xenial
-      #group: travis_latest
-      #env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="mock"
+    # ====== Fedora Rawhide =================================================
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="compile" COMPILER_C="gcc" COMPILER_CXX="g++"
+    - os: linux
+      dist: xenial
+      group: travis_latest
+      env: DOCKER="fedora:rawhide" VARIANT="fedora" TOOL="mock"
 
 
     # ###### Other ##########################################################
@@ -158,4 +158,4 @@ install:
 script:
   - |
     travis_wait 60 ci/build
-    travis_wait 60 ci/test
+    # travis_wait 60 ci/test
