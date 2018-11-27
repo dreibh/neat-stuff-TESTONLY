@@ -1,5 +1,5 @@
 Name: neat-stuff
-Version: 0.7.0~rc1.0
+Version: 0.7.0
 Release: 1
 Summary: NEAT Control
 Group: Applications/Internet
