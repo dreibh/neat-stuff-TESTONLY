@@ -87,7 +87,6 @@ Requires: pxz
 Requires: reiserfs-utils
 Requires: reprepro
 Requires: smartmontools
-Requires: sslscan
 Requires: subnetcalc
 Requires: tcpdump
 Requires: tftp
