@@ -4,6 +4,10 @@ set -e
 
 case "$1" in
    configure)
+      # cat /usr/share/neat-stuff/grub-defaults | \
+      #    ( if grep "biosdevname=0" /proc/cmdline ; then sed "s/^GRUB_CMDLINE_LINUX=\"/GRUB_CMDLINE_LINUX=\"biosdevname=0 /g" ; fi ) | \
+      #    ( if grep "net.ifnames=0" /proc/cmdline ; then sed "s/^GRUB_CMDLINE_LINUX=\"/GRUB_CMDLINE_LINUX=\"net.ifnames=0 /g" ; fi ) \
+      # >/etc/default/grub-defaults.new && mv /etc/default/grub-defaults.new /etc/default/grub-defaults
       if [ -x /usr/sbin/update-grub ] ; then
          /usr/sbin/update-grub || true
       fi
