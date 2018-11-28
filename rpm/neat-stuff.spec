@@ -117,7 +117,7 @@ See https://www.neat-project.org for details on NEAT!
 /usr/share/neat-stuff/grub-defaults
 
 %post management
-cp /usr/share/neat/grub-defaults /etc/default/grub
+cp /usr/share/neat-stuff/grub-defaults /etc/default/grub
 if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun management
@@ -190,7 +190,7 @@ See https://www.neat-project.org for details on NEAT!
 /etc/grub.d/??_neat_development_theme
 
 %post development
-cp /usr/share/neat/grub-defaults /etc/default/grub
+cp /usr/share/neat-stuff/grub-defaults /etc/default/grub
 if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun development
@@ -217,7 +217,7 @@ See https://www.neat-project.org for details on NEAT!
 %ghost /usr/share/neat-desktop/splash
 
 %post desktop
-cp /usr/share/neat/grub-defaults /etc/default/grub
+cp /usr/share/neat-stuff/grub-defaults /etc/default/grub
 if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun desktop
