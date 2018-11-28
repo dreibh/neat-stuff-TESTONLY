@@ -77,7 +77,6 @@ Recommends: apport-retrace,
             language-pack-en-base,
             language-pack-nb-base,
             linux-crashdump,
-            sslscan,
             tshark,
             update-motd
 Description: NEAT Management Tools
