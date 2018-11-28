@@ -79,7 +79,6 @@ Requires: jq
 Requires: libidn
 Requires: lksctp-tools
 Requires: mlocate
-Requires: netperfmeter
 Requires: net-snmp-utils
 Requires: net-tools
 Requires: nmap
@@ -171,8 +170,6 @@ Requires: pbuilder
 Requires: perl-Image-ExifTool
 Requires: pkg-config
 Requires: python3
-Requires: python3-psycopg2
-Requires: python3-pymongo
 Requires: qt5-qtbase-devel
 Requires: quilt
 Requires: R-base

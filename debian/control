@@ -122,11 +122,10 @@ Depends: autoconf,
          libssl-dev,
          libtool,
          mock,
+         neat-management,
          pbuilder,
          pkg-config,
          python3-all,
-         python3-psycopg2,
-         python3-pymongo,
          quilt,
          r-base,
          r-cran-ggplot2,
@@ -136,8 +135,7 @@ Depends: autoconf,
          valgrind,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: neat-management,
-            ubuntu-dev-tools
+Recommends: ubuntu-dev-tools
 Description: NEAT Development Tools
  This meta-package contains basic software for NEAT development.
  The software installed provides a common working environment.
