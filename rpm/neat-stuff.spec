@@ -118,11 +118,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %post management
 cp /usr/share/neat/grub-defaults /etc/default/grub
-if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun management
 rm -f /etc/grub.d/??_neat_desktop_theme
-if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 
 %package development
@@ -191,11 +191,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %post development
 cp /usr/share/neat/grub-defaults /etc/default/grub
-if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun development
 rm -f /etc/grub.d/??_neat_desktop_theme
-if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 
 %package desktop
@@ -218,11 +218,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %post desktop
 cp /usr/share/neat/grub-defaults /etc/default/grub
-if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun desktop
 rm -f /etc/grub.d/??_neat_desktop_theme
-if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 
 %changelog
