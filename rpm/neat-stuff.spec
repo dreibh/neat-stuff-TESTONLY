@@ -96,6 +96,7 @@ Requires: tree
 Requires: vconfig
 Requires: virt-what
 Requires: whois
+Recommends: grub2-tools
 Recommends: netperfmeter
 Recommends: libneat-examples,
 Recommends: libneat-socketapi-examples,
@@ -117,11 +118,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %post management
 cp /usr/share/neat/grub-defaults /etc/default/grub
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
 
 %postun management
 rm -f /etc/grub.d/??_neat_desktop_theme
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
 
 
 %package development
@@ -190,11 +191,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %post development
 cp /usr/share/neat/grub-defaults /etc/default/grub
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
 
 %postun development
 rm -f /etc/grub.d/??_neat_desktop_theme
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
 
 
 %package desktop
@@ -217,11 +218,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %post desktop
 cp /usr/share/neat/grub-defaults /etc/default/grub
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
 
 %postun desktop
 rm -f /etc/grub.d/??_neat_desktop_theme
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg ; fi
 
 
 %changelog
