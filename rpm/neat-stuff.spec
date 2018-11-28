@@ -79,7 +79,6 @@ Requires: jq
 Requires: libidn
 Requires: lksctp-tools
 Requires: mlocate
-Requires: netperfmeter
 Requires: net-snmp-utils
 Requires: net-tools
 Requires: nmap
@@ -97,6 +96,7 @@ Requires: tree
 Requires: vconfig
 Requires: virt-what
 Requires: whois
+Recommends: netperfmeter
 Recommends: libneat-examples,
 Recommends: libneat-socketapi-examples,
 Recommends: rsplib-docs
@@ -201,7 +201,6 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 Summary: NEAT Desktop
 Group: Applications/Internet
 Requires: %{name}-management = %{version}-%{release}
-Requires: %{name}-api = %{version}-%{release}
 Recommends: xorg-x11-drv-vmware
 
 %description desktop
