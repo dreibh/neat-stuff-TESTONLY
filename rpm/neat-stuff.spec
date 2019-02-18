@@ -188,6 +188,7 @@ The software installed provides a common working environment.
 See https://www.neat-project.org for details on NEAT!
 
 %files development
+/boot/NEAT/NEATDevelopment1-1024x768.jpeg
 /etc/grub.d/??_neat_development_theme
 
 %post development
