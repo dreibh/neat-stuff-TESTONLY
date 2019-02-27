@@ -20,7 +20,7 @@ Vcs-Git: https://bitbucket.org/dreibh/neat-stuff.git
 Vcs-Browser: https://bitbucket.org/dreibh/neat-stuff/tags
 
 Package: neat-management
-Architecture: any
+Architecture: all
 Depends: apt-file,
          apt-show-versions,
          bash-completion,
@@ -86,7 +86,7 @@ Description: NEAT Management Tools
  See https://www.neat-project.org for details on NEAT!
 
 Package: neat-development
-Architecture: any
+Architecture: all
 Depends: autoconf,
          automake,
          bc,
@@ -143,7 +143,7 @@ Description: NEAT Development Tools
  See https://www.neat-project.org for details on NEAT!
 
 Package: neat-desktop
-Architecture: any
+Architecture: all
 Depends: firefox | firefox-esr,
          kubuntu-desktop | neon-desktop | kde-standard | deepin-desktop-environment | lubuntu-desktop | ubuntu-desktop,
          neat-management (= ${binary:Version}),

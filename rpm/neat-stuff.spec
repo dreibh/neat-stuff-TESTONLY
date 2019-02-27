@@ -61,6 +61,7 @@ mv %{buildroot}/usr/share/neat-desktop/splash/neat-stuff-version %{buildroot}/et
 %package management
 Summary: NEAT Management
 Group: Applications/Internet
+BuildArch: noarch
 Requires: bash-completion
 Requires: bridge-utils
 Requires: btrfs-progs
@@ -132,6 +133,7 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 %package development
 Summary: NEAT Development
 Group: Applications/Internet
+BuildArch: noarch
 Requires: autoconf
 Requires: automake
 Requires: banner
@@ -202,6 +204,7 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 %package desktop
 Summary: NEAT Desktop
 Group: Applications/Internet
+BuildArch: noarch
 Requires: %{name}-management = %{version}-%{release}
 Recommends: xorg-x11-drv-vmware
 
