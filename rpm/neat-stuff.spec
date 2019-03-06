@@ -5,7 +5,7 @@ Summary: NEAT Control
 Group: Applications/Internet
 License: GPLv3
 URL: https://www.nntb.no/
-Source: https://www.nntb.no/download/%{name}-%{version}.tar.gz
+Source: https://packages.nntb.no/software/%{name}/%{name}-%{version}.tar.xz
 
 AutoReqProv: on
 BuildRequires: cmake
