@@ -112,9 +112,9 @@ See https://www.neat-project.org for details on NEAT!
 
 %files management
 /boot/NEAT/NEATManagement1-1024x768.jpeg
-/etc/grub.d/??_neat_management_theme
-/etc/neat/neat-stuff-version
-/usr/share/neat-stuff/grub-defaults
+%{_sysconfdir}/grub.d/??_neat_management_theme
+%{_sysconfdir}/neat/neat-stuff-version
+%{_datadir}/neat-stuff/grub-defaults
 
 %post management
 # echo "Updating /etc/default/grub with NorNet settings:"
@@ -191,7 +191,7 @@ See https://www.neat-project.org for details on NEAT!
 
 %files development
 /boot/NEAT/NEATDevelopment1-1024x768.jpeg
-/etc/grub.d/??_neat_development_theme
+%{_sysconfdir}/grub.d/??_neat_development_theme
 
 %post development
 if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
@@ -214,11 +214,11 @@ See https://www.neat-project.org for details on NEAT!
 
 %files desktop
 /boot/NEAT/NEATDesktop1-1024x768.jpeg
-/etc/grub.d/??_neat_desktop_theme
-/usr/share/neat-desktop/background/*
-/usr/share/neat-desktop/desktop/*
-/usr/share/neat-desktop/NEAT-A4.pdf
-%ghost /usr/share/neat-desktop/splash
+%{_sysconfdir}/grub.d/??_neat_desktop_theme
+%{_datadir}/neat-desktop/background/*
+%{_datadir}/neat-desktop/desktop/*
+%{_datadir}/neat-desktop/NEAT-A4.pdf
+%ghost %{_datadir}/neat-desktop/splash
 
 %post desktop
 if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
