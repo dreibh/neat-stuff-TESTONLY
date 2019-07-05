@@ -1,5 +1,5 @@
 Name: neat-stuff
-Version: 0.8.4
+Version: 0.8.5
 Release: 1
 Summary: NEAT Control
 Group: Applications/Internet
@@ -230,6 +230,8 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 
 
 %changelog
+* Fri Jul 05 2019 Thomas Dreibholz <dreibh@simula.no> - 0.8.5
+- New upstream release.
 * Wed Jul 03 2019 Thomas Dreibholz <dreibh@simula.no> - 0.8.4
 - New upstream release.
 * Mon Jun 17 2019 Thomas Dreibholz <dreibh@simula.no> - 0.8.3
