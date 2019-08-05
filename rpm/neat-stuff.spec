@@ -1,10 +1,10 @@
 Name: neat-stuff
-Version: 0.8.5
+Version: 0.8.6~alpha1.0
 Release: 1
 Summary: NEAT Control
 Group: Applications/Internet
 License: GPLv3
-URL: https://www.nntb.no/
+URL: https://www.neat-project.org/
 Source: https://packages.nntb.no/software/%{name}/%{name}-%{version}.tar.xz
 
 AutoReqProv: on
@@ -34,10 +34,9 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-build
 
 
 %description
-NEAT is a testbed for multi-homed systems. This package
-contains the management software for the testbed's
-infrastructure management software.
-See https://www.nntb.no for details on NEAT!
+This metapackage contains basic software for NEAT system management.
+The software installed provides a common working environment.
+See https://www.neat-project.org for details on NEAT!
 
 %prep
 %setup -q
