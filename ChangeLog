@@ -1,3 +1,15 @@
+commit 6f4b9df60b538c871b9f74628e5c06ee013e25fd
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 16:44:10 2019 +0200
+
+    Added LSM entry.
+
+commit ecf237eb4ddd5e9b98dad8bdadf2c9ea639250a4
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 15:13:15 2019 +0200
+
+    Removed obsolete file.
+
 commit 94e88f81fab4ba54fc9f6c6713c4b0928edc26ac
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Mon Aug 5 15:11:17 2019 +0200
