@@ -3,7 +3,7 @@ Version: 0.9.0
 Release: 1
 Summary: NEAT Control
 Group: Applications/Internet
-License: GPLv3
+License: GPL-3+
 URL: https://www.neat-project.org/
 Source: https://packages.nntb.no/software/%{name}/%{name}-%{version}.tar.xz
 
