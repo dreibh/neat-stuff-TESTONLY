@@ -1,3 +1,81 @@
+commit a5ef4dece538b9f1ec99f8a37400d6a518c830e0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 18:13:29 2019 +0200
+
+    Minor updates.
+
+commit a1c7c43e731fc798aa7d396ec07b3d83807f67a4
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 15:30:44 2019 +0200
+
+    Need to check for update-grub before calling it. It may not exist in e.g. Docker environments.
+
+commit 2af1664554559a9ce85910f59d59a436958a692c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 15:29:26 2019 +0200
+
+    Need to check for update-grub before calling it. It may not exist in e.g. Docker environments.
+
+commit 807a64934b3465b7ab4d81603ced986a3cb64d31
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 12:14:17 2019 +0200
+
+    Some updates.
+
+commit 8f996510271b0d3a07b36aebfaea6d7d23a0f4a2
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 11:33:45 2019 +0200
+
+    Use "update-grub" instead of "/usr/sbin/update-grub" in postinst/postrm scripts.
+
+commit bff2283570725229a87f6cc66fc057d80aefd646
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 10:33:04 2019 +0200
+
+    Fixed some inconsistencies in different packaging files.
+
+commit 5a4481a9c60d6202173cc5fcf265027ffa0093c6
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 7 10:04:34 2019 +0200
+
+    Updated build scripts.
+
+commit 99ee73f5276f3428b01b7e61dbb8a5e4d24e3792
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Aug 6 16:50:36 2019 +0200
+
+    Removed leading / from Ubuntu/Debian install files.
+
+commit 85466a2b2cd0c0e40188634ae6362f9cf559acbd
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 22:58:52 2019 +0200
+
+    Script updates.
+
+commit 0389394abdc03e7ee4077a141be78f84ca6330ee
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 22:06:50 2019 +0200
+
+    Updated CI scripts.
+
+commit 312fd7e3688e47b50978cdce7218400d787f18c3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 17:00:41 2019 +0200
+
+    Updated Debian Standards version.
+
+commit a6d57ecc3fd0875ae0263101000815e52383c10c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 16:56:40 2019 +0200
+
+    Updated LSM entry.
+
+commit 129c66e463177d031a011c80e44edb1cd271a17f
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 5 16:44:47 2019 +0200
+
+    New release neat-stuff-0.9.0.
+
 commit 6f4b9df60b538c871b9f74628e5c06ee013e25fd
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Mon Aug 5 16:44:10 2019 +0200
