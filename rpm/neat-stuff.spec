@@ -1,7 +1,7 @@
 Name: neat-stuff
 Version: 0.9.0
 Release: 1
-Summary: NEAT Control
+Summary: NEAT Stuff
 Group: Applications/Internet
 License: GPL-3+
 URL: https://www.neat-project.org/
@@ -59,7 +59,7 @@ mv %{buildroot}/usr/share/neat-desktop/splash/neat-stuff-version %{buildroot}/et
 
 
 %package management
-Summary: NEAT Management
+Summary: Management tools for the NEAT system environment
 Group: Applications/Internet
 BuildArch: noarch
 Requires: bash-completion
@@ -131,7 +131,7 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 
 
 %package development
-Summary: NEAT Development
+Summary: Development tools for the NEAT system environment
 Group: Applications/Internet
 BuildArch: noarch
 Requires: autoconf
@@ -185,7 +185,7 @@ Recommends: rsplib-devel
 
 
 %description development
-This meta-package contains basic software for NEAT development.
+This metapackage contains basic software for NEAT development.
 The software installed provides a common working environment.
 See https://www.neat-project.org for details on NEAT!
 
@@ -202,14 +202,14 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 
 
 %package desktop
-Summary: NEAT Desktop
+Summary: Desktop setup for the NEAT system environment
 Group: Applications/Internet
 BuildArch: noarch
 Requires: %{name}-management = %{version}-%{release}
 Recommends: xorg-x11-drv-vmware
 
 %description desktop
-This meta-package contains the scripts to configure a NEAT desktop.
+This metapackage contains the scripts to configure a NEAT desktop.
 See https://www.neat-project.org for details on NEAT!
 
 %files desktop

@@ -77,7 +77,7 @@ Recommends: apport-retrace,
             language-pack-nb-base,
             tshark,
             update-motd
-Description: NEAT Management Tools
+Description: Management tools for the NEAT system environment
  This metapackage contains basic software for NEAT system management.
  The software installed provides a common working environment.
  .
@@ -134,8 +134,8 @@ Depends: autoconf,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: ubuntu-dev-tools
-Description: NEAT Development Tools
- This meta-package contains basic software for NEAT development.
+Description: Development tools for the NEAT system environment
+ This metapackage contains basic software for NEAT development.
  The software installed provides a common working environment.
  .
  See https://www.neat-project.org for details on NEAT!
@@ -149,7 +149,7 @@ Depends: firefox | firefox-esr,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: fractgen
-Description: NEAT Desktop
- This meta-package contains the scripts to configure a NEAT desktop.
+Description: Desktop setup for the NEAT system environment
+ This metapackage contains the scripts to configure a NEAT desktop.
  .
  See https://www.neat-project.org for details on NEAT!
