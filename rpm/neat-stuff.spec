@@ -74,7 +74,6 @@ Requires: git
 Requires: gpm
 Requires: hping3
 Requires: htop
-Requires: ipsec-tools
 Requires: joe
 Requires: jq
 Requires: libidn
@@ -97,6 +96,7 @@ Requires: vconfig
 Requires: virt-what
 Requires: whois
 Recommends: grub2-tools
+Recommends: ipsec-tools
 Recommends: netperfmeter
 Recommends: libneat-examples,
 Recommends: libneat-socketapi-examples,
