@@ -1,1 +1,1 @@
-${MAKE_LOGO} ${OUTPUT}   "neat"   1024 30   "Golden"   "Noto Sans"
+${MAKE_TEXT} ${OUTPUT}   "neat"   1024 30   "Golden"   "Noto Sans"
