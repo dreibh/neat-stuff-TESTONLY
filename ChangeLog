@@ -1,3 +1,45 @@
+commit 793a1878a410bef9434fcf50f084355f9d52e377
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Sep 18 08:57:59 2019 +0200
+
+    Updated build scripts
+
+commit 4a2fb7143338f985cbe46de32a58e2fb308d211e
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Sep 10 15:44:52 2019 +0300
+
+    Updated build scripts
+
+commit 256b3e3f188eb1350cd1f7b1daeac6a84d2e7ada
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Sep 10 15:44:18 2019 +0300
+
+    Updated Travis CI configuration.
+
+commit 3e15ae8f80842646431cb08294192daeaa2cebc2
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Sep 4 22:50:41 2019 +0200
+
+    Updated build scripts
+
+commit b61125e759202471a5eb9aa1cfdb12c0bff20ee5
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Aug 26 13:03:22 2019 +0200
+
+    Updated build scripts
+
+commit db6736eaac6787e4fc3da8ad0baea8d6260c0acc
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Aug 22 18:33:20 2019 +0200
+
+    Updated LSM entry.
+
+commit e714b9ddafc7796d0778d9f4d914532ea990a4f0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Aug 22 17:54:45 2019 +0200
+
+    New release neat-stuff-0.9.2.
+
 commit 37d5bf43e57bd6621d391b4bf25e632d6785aafc
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Thu Aug 22 10:49:53 2019 +0200
