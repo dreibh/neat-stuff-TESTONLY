@@ -1,5 +1,5 @@
 Name: neat-stuff
-Version: 0.9.3
+Version: 0.9.4
 Release: 1
 Summary: NEAT Stuff
 Group: Applications/Internet
@@ -229,6 +229,8 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 
 
 %changelog
+* Thu Nov 07 2019 Thomas Dreibholz <dreibh@iem.uni-due.de> - 0.9.4
+- New upstream release.
 * Fri Sep 20 2019 Thomas Dreibholz <dreibh@iem.uni-due.de> - 0.9.3
 - New upstream release.
 * Thu Aug 22 2019 Thomas Dreibholz <dreibh@iem.uni-due.de> - 0.9.2
