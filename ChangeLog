@@ -1,3 +1,21 @@
+commit 231b0093d6163c0620a63056de110cc7963c1c2b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Dec 5 12:19:47 2019 +0100
+
+    Header updates.
+
+commit 5293cc68dee653c08f9cd3a741080f1fe6320cfb
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 13 16:26:26 2019 +0100
+
+    Minor updates.
+
+commit 5cc589f4b2e2a52fe4d88c54e081f9057b77a723
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Nov 7 15:24:32 2019 +0100
+
+    New release neat-stuff-0.9.4.
+
 commit db3fa91ee610a2a847f08e8d0a462036190a3e2f
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Fri Oct 18 12:26:40 2019 +0200
