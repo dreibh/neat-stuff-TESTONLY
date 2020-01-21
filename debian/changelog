@@ -1,3 +1,9 @@
+neat-stuff (1.0.1-1ubuntu1) disco; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Dreibholz <dreibh@iem.uni-due.de>  Tue, 21 Jan 2020 12:58:01 +0100
+
 neat-stuff (1.0.0-1ubuntu1) disco; urgency=medium
 
   * New upstream release.
