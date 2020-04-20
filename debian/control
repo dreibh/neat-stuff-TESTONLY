@@ -91,7 +91,6 @@ Depends: autoconf,
          bison,
          clang,
          cmake (>= 3.0.2) | cmake3,
-         createrepo,
          debhelper,
          devscripts,
          docker.io,
@@ -119,7 +118,6 @@ Depends: autoconf,
          libsctp-dev,
          libssl-dev,
          libtool,
-         mock,
          neat-management (= ${binary:Version}),
          pbuilder,
          pkg-config,
@@ -133,7 +131,9 @@ Depends: autoconf,
          valgrind,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: ubuntu-dev-tools
+Recommends: createrepo,
+            mock,
+            ubuntu-dev-tools
 Description: Development tools for the NEAT system environment
  This metapackage contains basic software for NEAT development.
  The software installed provides a common working environment.
