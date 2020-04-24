@@ -1,3 +1,63 @@
+commit 97e8d52c71537e9d006dca15f437a5825e877f73
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Apr 22 21:01:48 2020 +0200
+
+    Dependency fix.
+
+commit 996c5464eeaafeadf4e6876fb09e612608a7e8bd
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Apr 20 16:34:32 2020 +0200
+
+    Dependency fix.
+
+commit 595f2f6884b10bf595fddae57019301ffa15d4bb
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Apr 20 11:01:18 2020 +0200
+
+    Travis CI configuration update for Fedora.
+
+commit 708026b9437c55e5897224dba16805382b7fc3cc
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Apr 17 11:30:57 2020 +0200
+
+    Updated Travis CI configuration for Ubuntu builds.
+
+commit b2803138bc2d165e182b38e31625dae11bb12edd
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Apr 16 11:42:56 2020 +0200
+
+    Updated Travis CI configuration: Ubuntu 19.04 (Disco Dingo) is now obsolete.
+
+commit eeb3552f6ec4a26bbcf9830aeffbb1100d036c65
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Apr 14 19:04:43 2020 +0200
+
+    Updated build scripts
+
+commit 2d0a9475cf9027845d698717eb142813c5d60b28
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Mar 26 09:56:57 2020 +0100
+
+    Updated build scripts
+
+commit 7bc470fb4050c67ea26820a8beee8874c2fa3b23
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Feb 7 14:20:09 2020 +0100
+
+    Updated build scripts
+
+commit be9d5618818892c10ca570602f13ba64e4f06424
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Feb 7 14:20:09 2020 +0100
+
+    Updated build scripts
+
+commit 87eedb3323c66c55f29e1d9b5659f6bc53d012db
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Jan 21 12:58:04 2020 +0100
+
+    New release neat-stuff-1.0.1.
+
 commit a5a0cb54dfdab6ef8d6be180ed6801cc50504f5a
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Mon Jan 20 15:01:43 2020 +0100
