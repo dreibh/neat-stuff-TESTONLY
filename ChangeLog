@@ -1,3 +1,39 @@
+commit e45b883a96718abf07e5217afb396b6642fe653c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue May 5 13:15:39 2020 +0200
+
+    Version bump.
+
+commit 49ac4104349511a99729a4e52bec7923c187bda6
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue May 5 08:43:30 2020 +0200
+
+    Updated build scripts
+
+commit 4bd0535b0163916851fdee84004c714e72e4d11d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue May 5 08:43:30 2020 +0200
+
+    Updated build scripts
+
+commit 0576c791e930c42e6ff96a86fc784c6b2c2a179b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue May 5 08:43:09 2020 +0200
+
+    Updated Ubuntu/Debian packaging files.
+
+commit cfd298c27a5cb7a8b511ae846d9d971dc971d8ce
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue May 5 08:41:30 2020 +0200
+
+    Updated RPM spec.
+
+commit 441a24b7fedab8a0038bc814f9dda14051b36d74
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Fri Apr 24 12:41:48 2020 +0200
+
+    New release neat-stuff-1.0.2.
+
 commit 97e8d52c71537e9d006dca15f437a5825e877f73
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Wed Apr 22 21:01:48 2020 +0200
