@@ -1,5 +1,5 @@
 Name: neat-stuff
-Version: 1.0.2
+Version: 1.0.3~rc1
 Release: 1
 Summary: NEAT Stuff
 Group: Applications/Internet
