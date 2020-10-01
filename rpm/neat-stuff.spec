@@ -50,9 +50,9 @@ See https://www.neat-project.org for details on NEAT!
 %cmake_install
 # ====== Relocate files =====================================================
 mkdir -p %{buildroot}/boot/NEAT
-mv %{buildroot}/usr/share/neat-desktop/splash/NEATManagement1-1024x768.jpeg  %{buildroot}/boot/NEAT
-mv %{buildroot}/usr/share/neat-desktop/splash/NEATDevelopment1-1024x768.jpeg %{buildroot}/boot/NEAT
-mv %{buildroot}/usr/share/neat-desktop/splash/NEATDesktop1-1024x768.jpeg     %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/NEATManagement1-*.jpeg  %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/NEATDevelopment1-*.jpeg %{buildroot}/boot/NEAT
+mv %{buildroot}/usr/share/neat-desktop/splash/NEATDesktop1-*.jpeg     %{buildroot}/boot/NEAT
 mkdir -p %{buildroot}/etc/neat
 mv %{buildroot}/usr/share/neat-desktop/splash/neat-stuff-version %{buildroot}/etc/neat
 # ===========================================================================
@@ -111,7 +111,7 @@ The software installed provides a common working environment.
 See https://www.neat-project.org for details on NEAT!
 
 %files management
-/boot/NEAT/NEATManagement1-1024x768.jpeg
+/boot/NEAT/NEATManagement1-*.jpeg
 %{_sysconfdir}/grub.d/??_neat_management_theme
 %{_sysconfdir}/neat/neat-stuff-version
 %{_datadir}/neat-stuff/grub-defaults
@@ -192,7 +192,7 @@ The software installed provides a common working environment.
 See https://www.neat-project.org for details on NEAT!
 
 %files development
-/boot/NEAT/NEATDevelopment1-1024x768.jpeg
+/boot/NEAT/NEATDevelopment1-*.jpeg
 %{_sysconfdir}/grub.d/??_neat_development_theme
 
 %post development
@@ -215,7 +215,7 @@ This metapackage contains the scripts to configure a NEAT desktop.
 See https://www.neat-project.org for details on NEAT!
 
 %files desktop
-/boot/NEAT/NEATDesktop1-1024x768.jpeg
+/boot/NEAT/NEATDesktop1-*.jpeg
 %{_sysconfdir}/grub.d/??_neat_desktop_theme
 %{_datadir}/neat-desktop/background/*
 %{_datadir}/neat-desktop/desktop/*
