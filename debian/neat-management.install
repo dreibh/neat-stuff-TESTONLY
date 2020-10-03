@@ -1,4 +1,6 @@
 etc/grub.d/??_neat_management_theme
+etc/system-info.d/18-neat
+etc/system-maintenance.d/18-neat
 usr/share/neat-desktop/splash/NEATManagement1-*.jpeg /boot/NEAT
 usr/share/neat-desktop/splash/neat-stuff-version /etc/neat
 usr/share/neat-stuff/grub-defaults

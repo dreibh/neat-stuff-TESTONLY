@@ -113,6 +113,8 @@ See https://www.neat-project.org for details on NEAT!
 %{_sysconfdir}/grub.d/??_neat_management_theme
 %{_sysconfdir}/neat/neat-stuff-version
 %{_datadir}/neat-stuff/grub-defaults
+%{_sysconfdir}/system-info.d/18-neat
+%{_sysconfdir}/system-maintenance.d/18-neat
 
 %post management
 # echo "Updating /etc/default/grub with NorNet settings:"
