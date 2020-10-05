@@ -1,5 +1,5 @@
 Name: neat-stuff
-Version: 1.0.3
+Version: 1.1.0~alpha1.1
 Release: 1
 Summary: NEAT Stuff
 Group: Applications/Internet
@@ -117,14 +117,6 @@ See https://www.neat-project.org for details on NEAT!
 %{_sysconfdir}/system-maintenance.d/18-neat
 
 %post management
-# echo "Updating /etc/default/grub with NorNet settings:"
-# echo "-----"
-# cat /usr/share/nornet/grub-defaults | \
-#    ( if grep "biosdevname=0" >/dev/null 2>&1 /proc/cmdline ; then sed "s/^GRUB_CMDLINE_LINUX=\"/GRUB_CMDLINE_LINUX=\"biosdevname=0 /g" ; else cat ; fi ) | \
-#    ( if grep "net.ifnames=0" >/dev/null 2>&1 /proc/cmdline ; then sed "s/^GRUB_CMDLINE_LINUX=\"/GRUB_CMDLINE_LINUX=\"net.ifnames=0 /g" ; else cat ; fi ) | \
-#    tee /etc/default/grub.new && \
-# grep "^GRUB_ENABLE_CRYPTODISK=" /etc/default/grub | tee --append /etc/default/grub.new && \
-# mv /etc/default/grub.new /etc/default/grub
 if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg || true ; fi
 
 %postun management

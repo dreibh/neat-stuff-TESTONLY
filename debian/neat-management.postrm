@@ -4,6 +4,9 @@ set -e
 
 case "$1" in
    remove|purge|abort-install)
+      rm -f /etc/system-info.d/??-neat
+      rm -f /etc/system-maintenance.d/??-neat
+
       rm -f /etc/grub.d/??_neat_management_theme
       if [ -x "$(command -v update-grub)" ] ; then
          update-grub || true
