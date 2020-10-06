@@ -1,3 +1,88 @@
+commit 7c63957830c4dbb565df23308cb417fe0b95f3b4
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Oct 5 22:01:46 2020 +0200
+
+    Improved packaging configuration.
+
+commit 23f6075b8d7c2ea02928b58cc72550f420ce09d3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Oct 5 10:17:41 2020 +0200
+
+    Packaging configuration update.
+
+commit eb88b6f915854e6bc474b6f98102c1d175c27799
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sat Oct 3 19:11:43 2020 +0200
+
+    Update to System-Info/System-Maintenance scripts.
+
+commit 482b08b0a09f2f82340cf4416456e712d6578ec9
+Merge: c7d22dc f3138c2
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Oct 1 13:00:39 2020 +0200
+
+    Merge branch 'master' of ssh://bitbucket.org/dreibh/neat-stuff
+
+commit c7d22dc9e9ab5aae1b805e72fa881c57db2dc7c8
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Oct 1 12:51:46 2020 +0200
+
+    Header fix.
+
+commit f3138c29524b7fc3c74b8c7f73718b0456de585c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Oct 1 12:18:55 2020 +0200
+
+    RPM spec fix: need to set BuildArch.
+
+commit a0e626e40dca66fe766e71988e381dc2d537d3f3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Oct 1 11:54:36 2020 +0200
+
+    Packaging file updates.
+
+commit 9ebc2b3a39ef5a1ce5387cda6929041cc1f13049
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Oct 1 11:05:24 2020 +0200
+
+    Updated scripts.
+
+commit 96a4278823e55697fe6415876d68279392517b13
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Sep 30 17:04:55 2020 +0200
+
+    Updated RPM spec file.
+
+commit 5c8040f5abcaaa07b75b632243b16b5827e9560f
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Sep 30 16:55:42 2020 +0200
+
+    Updated build scripts
+
+commit ab8b7c8c5ff5b5efa791f74c02503d4ff6cc38ff
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Sep 10 12:41:21 2020 +0200
+
+    Updated build scripts
+
+commit 803c6cdf28098df9080bcca7eee9029335d9c3f2
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Sep 10 12:41:11 2020 +0200
+
+    Updated packaging configuration.
+
+commit db70e70f657ebeb4768b498a84a48db4fc5e8f2b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Sep 10 12:39:40 2020 +0200
+
+    Updated signing key.
+
+commit 9da77aa26bd541114854268c9af7bafe08018de3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue May 5 13:17:05 2020 +0200
+
+    New release neat-stuff-1.0.3.
+
 commit e45b883a96718abf07e5217afb396b6642fe653c
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Tue May 5 13:15:39 2020 +0200
