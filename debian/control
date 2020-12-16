@@ -104,7 +104,6 @@ Depends: autoconf,
          gnuplot,
          graphicsmagick,
          gsfonts,
-         kernel-package,
          libbz2-dev,
          libcpprspserver-dev,
          libcurl4-openssl-dev,
@@ -131,9 +130,7 @@ Depends: autoconf,
          valgrind,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: createrepo,
-            mock,
-            ubuntu-dev-tools
+Recommends: ubuntu-dev-tools
 Description: Development tools for the NEAT system environment
  This metapackage contains basic software for NEAT development.
  The software installed provides a common working environment.
