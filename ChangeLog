@@ -1,3 +1,15 @@
+commit 39491290de715ca8007680edd481f4e44d3b4ac5
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Dec 16 13:46:25 2020 +0100
+
+    Dependency fixes.
+
+commit a9574d006a15b781ba67cc436bdfb5062dc3ca30
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 15 18:05:47 2020 +0100
+
+    New release neat-stuff-1.1.2.
+
 commit 3ca5970fe76a5c120ce99feeb01d303d62118fa4
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Sun Nov 15 13:43:38 2020 +0100

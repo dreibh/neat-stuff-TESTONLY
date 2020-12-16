@@ -15,7 +15,7 @@ Build-Depends: cmake (>= 3.3) | cmake3,
                libfile-fcntllock-perl,
                libimage-exiftool-perl,
                python3
-Standards-Version: 4.5.0.3
+Standards-Version: 4.5.1.0
 Rules-Requires-Root: no
 Vcs-Git: https://bitbucket.org/dreibh/neat-stuff.git
 Vcs-Browser: https://bitbucket.org/dreibh/neat-stuff/tags
