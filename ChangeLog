@@ -1,3 +1,75 @@
+commit 3d72d4afdf359e8bb0b0367a7b575b4404c28066
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Feb 14 17:15:05 2022 +0100
+
+    Updated build scripts
+
+commit 653d744eccf05f9731d177e2235ee93c5776d71c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 30 15:32:12 2021 +0100
+
+    Travis CI is dead. Removed obsolete Travis CI scripts and configuration.
+
+commit 48129d76f556827d3e4a661805597ad9ef389e21
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 30 15:32:10 2021 +0100
+
+    Updated build scripts
+
+commit fb3f8cab0c9ac0a581e20d88fe43681bec69a62a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 30 15:31:43 2021 +0100
+
+    Updated CI scripts
+
+commit 0d2818b6c8618a85f6137dbab969f1c517a3cc65
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Nov 30 15:29:10 2021 +0100
+
+    Removed invalid field "Homepage" from debian/upstream/metadata
+
+commit 8a189db361845c508a348f88d943f0ab3e92e6d2
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Nov 8 10:39:42 2021 +0100
+
+    Updated build scripts
+
+commit 99fc772a41d990d9a0eeac88776f5c9157bbb2e9
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 7 14:27:37 2021 +0100
+
+    Updated build scripts.
+
+commit e5ece5ee1d643450c6e62ee241383f5db872e1f8
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Nov 7 14:22:52 2021 +0100
+
+    Updated build scripts
+
+commit c7d395511600a0e7809cc0cb60f8f10953b429e3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 3 18:19:19 2021 +0100
+
+    Updated build scripts
+
+commit 621ca0dfdeb3bff0ce74802b17a49ac837653c47
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 3 18:19:00 2021 +0100
+
+    Updated build scripts
+
+commit bf442883060425d5017c940d8686620057a53817
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Jun 14 12:54:28 2021 +0200
+
+    Updated LSM entry.
+
+commit df95d89d600f7bb68b9eb9eddb7ee40040fb3a6d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Jun 14 12:47:39 2021 +0200
+
+    New release neat-stuff-1.1.4.
+
 commit 8c270ec3725fbdfdda7a21fc3c52231442d65308
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Mon Jun 14 12:47:04 2021 +0200
