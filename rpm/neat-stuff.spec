@@ -82,7 +82,6 @@ Requires: net-tools
 Requires: nmap
 Requires: (ntpsec or ntpdate)
 Requires: pxz
-Requires: reiserfs-utils
 Requires: reprepro
 Requires: smartmontools
 Requires: subnetcalc
@@ -98,6 +97,7 @@ Recommends: ipsec-tools
 Recommends: netperfmeter
 Recommends: libneat-examples,
 Recommends: libneat-socketapi-examples,
+Recommends: reiserfs-utils
 Recommends: rsplib-docs
 Recommends: rsplib-services
 Recommends: rsplib-tools
