@@ -1,3 +1,21 @@
+commit 7295e38faac44445f01d3964a28d0f9b45994702
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 16 11:42:20 2022 +0100
+
+    Updated background script.
+
+commit 307214d8deb4981e7374eb26c558721d19d06d99
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Feb 15 16:42:32 2022 +0100
+
+    RPM dependency fix.
+
+commit 54fb5a2456fe368360502316cccd4782b302f321
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Feb 14 17:15:39 2022 +0100
+
+    New release neat-stuff-1.1.5.
+
 commit 3d72d4afdf359e8bb0b0367a7b575b4404c28066
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Mon Feb 14 17:15:05 2022 +0100
