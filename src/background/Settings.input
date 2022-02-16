@@ -62,6 +62,8 @@ SET(TDD_VARIANTS
 
 SET(TDD_JPEG_QUALITY          87.5)
 
+SET(TDD_BUILD_MIRRORED        0)
+
 SET(TDD_BUILD_BOOTSPLASH      1)
 SET(TDD_BOOTSPLASH_RESOLUTIONS
    1024x768    # Standard
@@ -89,17 +91,19 @@ SET(TDD_BUILD_OVERLAY "${CMAKE_CURRENT_SOURCE_DIR}/build-overlay")
 SET(TDD_BUILD_CAPTION "${CMAKE_CURRENT_SOURCE_DIR}/build-caption")
 
 # ------ Outputs ------------------------------------------
-SET(TDD_ADD_DIST_TARGET          0)
-SET(TDD_FLAT_DIRECTORY_STRUCTURE 1)
-SET(TDD_OUTPUT_DIRECTORY         "Output")
-SET(TDD_INSTALL_SUBDIRECTORY     "neat-desktop")   # Install under [PREFIX]/share/${TDD_INSTALL_SUBDIRECTORY}
-SET(TDD_INSTALL_ORIGINALS        0)
-SET(TDD_OUTPUT_OVERLAY           "overlay")
-SET(TDD_OUTPUT_ORIGINALS         "original")
-SET(TDD_OUTPUT_WITHOUT_LOGO      "background")
-SET(TDD_OUTPUT_WITH_LOGO         "desktop")
-SET(TDD_OUTPUT_SPLASH            "splash")
-SET(TDD_OUTPUT_CAPTIONFILE       "neat-stuff-version")
+SET(TDD_ADD_DIST_TARGET              0)
+SET(TDD_FLAT_DIRECTORY_STRUCTURE     1)
+SET(TDD_OUTPUT_DIRECTORY             "Output")
+SET(TDD_INSTALL_SUBDIRECTORY         "neat-desktop")   # Install under [PREFIX]/share/${TDD_INSTALL_SUBDIRECTORY}
+SET(TDD_INSTALL_ORIGINALS            0)
+SET(TDD_OUTPUT_OVERLAY               "overlay")
+SET(TDD_OUTPUT_ORIGINALS             "original")
+SET(TDD_OUTPUT_WITHOUT_LOGO          "background")
+SET(TDD_OUTPUT_WITH_LOGO             "desktop")
+SET(TDD_OUTPUT_MIRRORED_WITHOUT_LOGO "mirrored-background")
+SET(TDD_OUTPUT_MIRRORED_WITH_LOGO    "mirrored-desktop")
+SET(TDD_OUTPUT_SPLASH                "splash")
+SET(TDD_OUTPUT_CAPTIONFILE           "neat-stuff-version")
 
 # ------ Programs -----------------------------------------
 SET(TDD_TEST_GIMP       "${CMAKE_CURRENT_SOURCE_DIR}/gimp-scripts/Test-Gimp")
