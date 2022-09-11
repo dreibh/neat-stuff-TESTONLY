@@ -1,3 +1,33 @@
+commit 48277bd15cb41e97dce26eff3bc23516d1a6d453
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 31 11:47:15 2022 +0200
+
+    Removed Vcs-* fields from debian/control.
+
+commit 53ef88eb328ba08d653b72571bb1c3132cc16206
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 31 11:18:55 2022 +0200
+
+    Updated CI scripts
+
+commit c07c896227e59a5c3a008ac8da92a6c5c7dcf1a7
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Aug 31 11:18:53 2022 +0200
+
+    Updated build scripts
+
+commit 2dddfe213c574f93837b66d1cd05375b1a61679b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 16 12:12:59 2022 +0100
+
+    Updated LSM entry.
+
+commit 81005d32f2592786fed5fc3f8b605956406ce167
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 16 11:46:51 2022 +0100
+
+    New release neat-stuff-1.1.6.
+
 commit 7295e38faac44445f01d3964a28d0f9b45994702
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Wed Feb 16 11:42:20 2022 +0100
