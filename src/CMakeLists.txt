@@ -1,11 +1,11 @@
 #############################################################################
-# PROGRAMS
+#### PROGRAMS                                                            ####
 #############################################################################
 
 
 
 #############################################################################
-# CONFIGURATION FILES
+#### CONFIGURATION FILES                                                 ####
 #############################################################################
 
 INSTALL(PROGRAMS system-info.d/18-neat DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/system-info.d)
@@ -15,7 +15,7 @@ INSTALL(PROGRAMS system-maintenance.d/18-neat DESTINATION ${CMAKE_INSTALL_FULL_S
 
 
 #############################################################################
-# SOURCE DIRECTORIES
+#### SOURCE DIRECTORIES                                                  ####
 #############################################################################
 
 ADD_SUBDIRECTORY(background)
