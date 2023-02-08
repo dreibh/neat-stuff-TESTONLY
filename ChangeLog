@@ -1,3 +1,33 @@
+commit 2557e5838ce0aec771887285e9304586f8bb40e5
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 8 11:33:34 2023 +0100
+
+    URL change from UDE to NNTB.
+
+commit 00a3646a0c215853c5772fc8664f44bcb616133d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 8 11:32:51 2023 +0100
+
+    Updated CI scripts
+
+commit 73d3942fc09659618247343199217f35220a76f0
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 8 11:32:49 2023 +0100
+
+    Updated build scripts
+
+commit cb0ef4aaee67e816af624c85b0e27efdddcdeb02
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Dec 12 13:29:58 2022 +0100
+
+    Minor CMakeLists.txt updates.
+
+commit 4f15f3ce25099bc9897071e352f4c380298eb193
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sun Sep 11 13:32:30 2022 +0200
+
+    New release neat-stuff-1.1.7.
+
 commit 48277bd15cb41e97dce26eff3bc23516d1a6d453
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Wed Aug 31 11:47:15 2022 +0200

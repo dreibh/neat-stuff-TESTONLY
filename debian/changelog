@@ -1,3 +1,10 @@
+neat-stuff (1.1.8-1ubuntu1) hirsute; urgency=medium
+
+  * New upstream release.
+  * debian/control: Updated standards version to 4.6.2.
+
+ -- Thomas Dreibholz <thomas.dreibholz@gmail.com>  Wed, 08 Feb 2023 11:46:33 +0100
+
 neat-stuff (1.1.7-1ubuntu1) hirsute; urgency=medium
 
   * New upstream release.
