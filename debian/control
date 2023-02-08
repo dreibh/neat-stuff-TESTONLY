@@ -1,7 +1,7 @@
 Source: neat-stuff
 Section: net
 Priority: optional
-Maintainer: Thomas Dreibholz <dreibh@iem.uni-due.de>
+Maintainer: Thomas Dreibholz <thomas.dreibholz@gmail.com>
 Homepage: https://www.neat-project.org
 Build-Depends: cmake (>= 3.3) | cmake3,
                debhelper (>= 9),
