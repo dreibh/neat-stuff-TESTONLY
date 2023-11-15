@@ -12,7 +12,6 @@ Build-Depends: cmake,
                gimp,
                graphicsmagick,
                gsfonts,
-               libfile-fcntllock-perl,
                libimage-exiftool-perl,
                python3
 Standards-Version: 4.6.2
@@ -39,7 +38,6 @@ Depends: apt-file,
          idn,
          ifupdown,
          joe,
-         libfile-fcntllock-perl,
          libneat-examples,
          libneat-socketapi-examples,
          lksctp-tools,
@@ -65,8 +63,7 @@ Depends: apt-file,
          vlan,
          whois,
          xz-utils (>= 5.2.0) | pxz,
-         ${misc:Depends},
-         ${shlibs:Depends}
+         ${misc:Depends}
 Recommends: apport-retrace,
             grub2-common,
             ipsec-tools,
@@ -87,7 +84,7 @@ Depends: autoconf,
          bc,
          bison,
          clang,
-         cmake (>= 3.3) | cmake3,
+         cmake,
          debhelper,
          devscripts,
          docker.io,
@@ -125,8 +122,7 @@ Depends: autoconf,
          rpm,
          sysvbanner,
          valgrind,
-         ${misc:Depends},
-         ${shlibs:Depends}
+         ${misc:Depends}
 Recommends: ubuntu-dev-tools
 Description: Development tools for the NEAT system environment
  This metapackage contains basic software for NEAT development.
@@ -140,8 +136,7 @@ Depends: firefox | firefox-esr,
          kubuntu-desktop | neon-desktop | kde-standard | deepin-desktop-environment | lubuntu-desktop | ubuntu-desktop,
          neat-management (= ${binary:Version}),
          sddm | kdm | lightdm | gdm3,
-         ${misc:Depends},
-         ${shlibs:Depends}
+         ${misc:Depends}
 Recommends: fractgen
 Description: Desktop setup for the NEAT system environment
  This metapackage contains the scripts to configure a NEAT desktop.
