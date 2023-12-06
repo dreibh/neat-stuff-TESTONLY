@@ -1,3 +1,63 @@
+commit babafa1073304e86d7ac924f7d2a0e8aefdd2726
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Dec 6 15:07:55 2023 +0100
+
+    CMake dependency update.
+
+commit 179b9dd0018bfa418356276813cb3ef6cc796334
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Dec 6 14:36:16 2023 +0100
+
+    Dependency update.
+
+commit 821225d9f7ed7e2fc2d9cfdfc8fe23421635db61
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Dec 6 14:08:10 2023 +0100
+
+    RPM dependency fix.
+
+commit 9a3857d80e7b59e08152da36edd16f47938fb21d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 15 11:42:31 2023 +0100
+
+    Dependency improvements.
+
+commit cf924f9d37b580bd319714bbb59b47af21b4e18a
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 15 10:53:51 2023 +0100
+
+    Packaging clean-ups.
+
+commit 98105d6e569392a90438c82cec067ec18366072d
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 15 09:49:44 2023 +0100
+
+    Header updates.
+
+commit aa68d952a106b0e45d288087db00c8b0ceb18653
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 15 09:33:08 2023 +0100
+
+    Updated CI scripts
+
+commit 9a9b936ed433c9056e7ef078a409b5c1f6409b2f
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Nov 15 09:33:06 2023 +0100
+
+    Updated build scripts
+
+commit f164a3cce28c4a486892abdad9f1e3628d0e684b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 8 11:57:09 2023 +0100
+
+    Updated LSM entry.
+
+commit ac84a2df5c7cfd09a795ec583e3b05707ada97a1
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Feb 8 11:46:34 2023 +0100
+
+    New release neat-stuff-1.1.8.
+
 commit 2557e5838ce0aec771887285e9304586f8bb40e5
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Wed Feb 8 11:33:34 2023 +0100
