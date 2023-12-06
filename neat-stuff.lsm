@@ -1,7 +1,7 @@
 Begin4
 Title:          neat-stuff
-Version:        1.1.8
-Entered-date:   2023-02-08
+Version:        1.1.9
+Entered-date:   2023-12-06
 Description:    This metapackage contains basic software for NEAT system
                 management. The software installed provides a common working
                 environment.
@@ -10,7 +10,7 @@ Keywords:       NEAT Project
 Author:         dreibh@simula.no (Thomas Dreibholz)
 Maintained-by:  dreibh@simula.no (Thomas Dreibholz)
 Primary-site:   https://packages.nntb.no/software/neat-stuff
-                48272 kB neat-stuff-1.1.8.tar.xz
+                48272 kB neat-stuff-1.1.9.tar.xz
 Original-site:  https://www.neat-project.org
 Platforms:      Linux
 Copying-policy: GPL-3+
