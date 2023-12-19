@@ -1,3 +1,27 @@
+commit edb661d11bf62aff8fddc9757efc340bb5014d68
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Tue Dec 19 15:28:00 2023 +0100
+
+    Dependency update.
+
+commit 70561f7e9b3d577f19689a623da69c4b4a8830cb
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Dec 7 10:20:41 2023 +0100
+
+    Updated packaging configuration.
+
+commit 9ce48c502d964df7b84ce37bd4a54f3cf99efaa4
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Dec 6 17:34:07 2023 +0100
+
+    Updated LSM entry.
+
+commit f5131bab0e94cb0278f4b88216295ce439e0d7a9
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Dec 6 17:27:51 2023 +0100
+
+    New release neat-stuff-1.1.9.
+
 commit babafa1073304e86d7ac924f7d2a0e8aefdd2726
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Wed Dec 6 15:07:55 2023 +0100
