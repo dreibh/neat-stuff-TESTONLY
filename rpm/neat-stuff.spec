@@ -3,7 +3,7 @@ Version: 1.2.0
 Release: 1
 Summary: NEAT Stuff
 Group: Applications/Internet
-License: GPL-3+
+License: GPL-3.0-or-later
 URL: https://www.neat-project.org/
 Source: https://packages.nntb.no/software/%{name}/%{name}-%{version}.tar.xz
 
