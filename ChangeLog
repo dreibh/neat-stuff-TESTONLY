@@ -1,3 +1,27 @@
+commit aa3370a9b6eb392bc8b4e78b8cb34cb81b986f9b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sat Dec 14 16:34:14 2024 +0100
+
+    Updated CMakeLists.txt.
+
+commit 8613c2cd37d9463e011c240e8961bdd1e9798dc3
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sat Dec 14 16:31:01 2024 +0100
+
+    Another RPM spec file update.
+
+commit b34c36289d28c2c5bc7d8d761cabb8edba9675f7
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sat Dec 14 16:16:58 2024 +0100
+
+    Moved LSM file into separate repository.
+
+commit afdfc9eaed7bfe3fa4debc774d7a73f7b4ab011b
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sat Dec 14 16:06:53 2024 +0100
+
+    New release neat-stuff-1.2.0.
+
 commit bf89c56edb82f6e63911ca9a42e4bf88d73b3a51
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Thu Dec 5 17:18:35 2024 +0100
