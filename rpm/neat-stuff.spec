@@ -1,9 +1,9 @@
 Name: neat-stuff
-Version: 1.1.10
+Version: 1.2.1
 Release: 1
 Summary: NEAT Stuff
 Group: Applications/Internet
-License: GPL-3+
+License: GPL-3.0-or-later
 URL: https://www.neat-project.org/
 Source: https://packages.nntb.no/software/%{name}/%{name}-%{version}.tar.xz
 
@@ -222,6 +222,10 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 
 
 %changelog
+* Sat Dec 14 2024 Thomas Dreibholz <thomas.dreibholz@gmail.com> - 1.2.1
+- New upstream release.
+* Sat Dec 14 2024 Thomas Dreibholz <thomas.dreibholz@gmail.com> - 1.2.0
+- New upstream release.
 * Tue Dec 19 2023 Thomas Dreibholz <thomas.dreibholz@gmail.com> - 1.1.10
 - New upstream release.
 * Wed Dec 06 2023 Thomas Dreibholz <thomas.dreibholz@gmail.com> - 1.1.9
