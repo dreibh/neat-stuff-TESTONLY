@@ -14,7 +14,7 @@ Build-Depends: cmake,
                gsfonts,
                libimage-exiftool-perl,
                python3
-Standards-Version: 4.7.0
+Standards-Version: 4.7.2
 Rules-Requires-Root: no
 
 Package: neat-management

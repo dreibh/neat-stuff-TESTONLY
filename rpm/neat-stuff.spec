@@ -1,5 +1,5 @@
 Name: neat-stuff
-Version: 1.2.1
+Version: 1.2.2~rc0
 Release: 1
 Summary: NEAT Stuff
 Group: Applications/Internet
@@ -21,7 +21,6 @@ BuildRequires: google-noto-sans-fonts
 BuildRequires: google-noto-serif-fonts
 BuildRequires: GraphicsMagick
 BuildRequires: perl-Image-ExifTool
-BuildRequires: pygtk2
 BuildRequires: texlive-epstopdf-bin
 BuildRequires: urw-base35-fonts
 BuildRoot: %{_tmppath}/%{name}-%{version}-build
