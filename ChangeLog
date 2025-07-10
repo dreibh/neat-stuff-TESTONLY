@@ -1,3 +1,52 @@
+commit be4f552e320ecad48a9927165b83a7ff8c0e1977
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Jul 10 10:16:50 2025 +0200
+
+    Minor compatibility fix.
+
+commit 7a5efde4641e7430067b025a7cbc108fe0e8328c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Jul 9 16:51:44 2025 +0200
+
+    Version bump.
+
+commit 0e1bbca663e2f847746e7602c5bc0c83c6a56db8
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Jul 9 16:26:52 2025 +0200
+
+    Updated texts.
+
+commit 11cef58f494ca620cfb79056c1cd0b96f5e1a40e
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Jul 9 16:19:11 2025 +0200
+
+    Updated background generation.
+
+commit be91c131a6e332d83d5e70faa37cfc88246a9d58
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Jul 9 16:17:32 2025 +0200
+
+    Updated scripts.
+
+commit bd5201f23c0aecf71e7b5a32bc94bb56e2651dc4
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Wed Jul 9 16:16:53 2025 +0200
+
+    Updated GIMP scripts
+
+commit 99b3e46009a1e93e68f00728840c97d81c99c81e
+Merge: 3d41f01 ee68050
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Mon Dec 16 09:20:17 2024 +0100
+
+    Merge branch 'master' of ssh://bitbucket.org/dreibh/neat-stuff
+
+commit ee680503c12722195f8ae254c2b6dbe98729423c
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Sat Dec 14 16:34:40 2024 +0100
+
+    New release neat-stuff-1.2.1.
+
 commit aa3370a9b6eb392bc8b4e78b8cb34cb81b986f9b
 Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Sat Dec 14 16:34:14 2024 +0100
@@ -21,6 +70,12 @@ Author: Thomas Dreibholz <dreibh@simula.no>
 Date:   Sat Dec 14 16:06:53 2024 +0100
 
     New release neat-stuff-1.2.0.
+
+commit 3d41f0144cf14fa89464c76cb4292dc19c78b506
+Author: Thomas Dreibholz <dreibh@simula.no>
+Date:   Thu Dec 5 17:48:42 2024 +0100
+
+    Updated CMakeLists.txt.
 
 commit bf89c56edb82f6e63911ca9a42e4bf88d73b3a51
 Author: Thomas Dreibholz <dreibh@simula.no>
