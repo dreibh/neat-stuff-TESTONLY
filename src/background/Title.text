@@ -1,1 +1,1 @@
-${MAKE_GLOSSYTEXT} ${OUTPUT}   "neat"   1024   --bordersize 30   --colorscheme "Golden"   --font "Noto Sans Regular"
+${MAKE_GLOSSYTEXT} "${OUTPUT}"   "neat"   1024   --bordersize 30   --colorscheme "Golden"   --font "Noto Sans Regular"
