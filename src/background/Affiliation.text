@@ -1,1 +1,6 @@
+#!/usr/bin/env bash
+
+# Bash options:
+set -eu
+
 ${MAKE_GLOSSYTEXT} "${OUTPUT}"   "Simula Research Laboratory"   256   --bordersize 10   --colorscheme "Golden"   --font "Noto Sans Regular"

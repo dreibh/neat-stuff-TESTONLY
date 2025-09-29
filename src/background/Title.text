@@ -1,1 +1,10 @@
-${MAKE_GLOSSYTEXT} "${OUTPUT}"   "neat"   1024   --bordersize 30   --colorscheme "Golden"   --font "Noto Sans Regular"
+#!/usr/bin/env bash
+
+# Bash options:
+set -eu
+
+${MAKE_GLOSSYTEXT} "${OUTPUT}"   \
+   "neat"   1024                 \
+   --bordersize 30               \
+   --colorscheme "Golden"        \
+   --font "Noto Sans Regular"

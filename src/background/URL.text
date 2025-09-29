@@ -1,1 +1,10 @@
-${MAKE_GLOSSYTEXT} "${OUTPUT}"   "dreibh@simula.no"   256   --bordersize 10   --colorscheme "Brushed Aluminium"   --font "Noto Sans Regular"
+#!/usr/bin/env bash
+
+# Bash options:
+set -eu
+
+${MAKE_GLOSSYTEXT} "${OUTPUT}"         \
+   "dreibh@simula.no"   256            \
+   --bordersize 10                     \
+   --colorscheme "Brushed Aluminium"   \
+   --font "Noto Sans Regular"

@@ -1,1 +1,10 @@
-${MAKE_GLOSSYTEXT} "${OUTPUT}"   "A New, Evolutive API and Transport-Layer Architecture for the Internet"   256   --bordersize 20   --colorscheme "Golden"   --font "Noto Sans Regular"
+#!/usr/bin/env bash
+
+# Bash options:
+set -eu
+
+${MAKE_GLOSSYTEXT} "${OUTPUT}"   \
+   "A New, Evolutive API and Transport-Layer Architecture for the Internet"   256   \
+   --bordersize 20                                                                  \
+   --colorscheme "Golden"                                                           \
+   --font "Noto Sans Regular"
