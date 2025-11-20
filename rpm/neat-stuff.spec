@@ -84,7 +84,6 @@ Requires: (mlocate or plocate)
 Requires: net-snmp-utils
 Requires: net-tools
 Requires: nmap
-Requires: (ntpsec or ntpdate)
 Requires: pxz
 Requires: reprepro
 Requires: smartmontools
@@ -101,7 +100,6 @@ Recommends: ipsec-tools
 Recommends: netperfmeter
 Recommends: libneat-examples,
 Recommends: libneat-socketapi-examples,
-Recommends: reiserfs-utils
 Recommends: rsplib-docs
 Recommends: rsplib-services
 Recommends: rsplib-tools
