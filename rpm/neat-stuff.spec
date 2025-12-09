@@ -31,8 +31,9 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-build
 
 BuildArch: noarch
 
-# TEST ONLY:
-%define _unpackaged_files_terminate_build 0
+Requires: %{name}-management
+Requires: %{name}-development
+Requires: %{name}-desktop
 
 
 %description
@@ -58,6 +59,8 @@ mv %{buildroot}/usr/share/neat-desktop/splash/NEATDesktop1-*.jpeg     %{buildroo
 mkdir -p %{buildroot}/etc/neat
 mv %{buildroot}/usr/share/neat-desktop/splash/neat-stuff-version %{buildroot}/etc/neat
 # ===========================================================================
+
+%files
 
 
 %package management
@@ -148,6 +151,7 @@ if [ -e /usr/sbin/grub2-mkconfig ] ; then /usr/sbin/grub2-mkconfig -o /boot/grub
 Summary: Development tools for the NEAT system environment
 Group: Applications/Internet
 BuildArch: noarch
+Requires: %{name}-management = %{version}-%{release}
 Requires: autoconf
 Requires: automake
 Requires: bc
